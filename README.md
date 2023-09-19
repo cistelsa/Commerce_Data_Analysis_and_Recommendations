@@ -16,7 +16,7 @@
 - [Objetivos y Alcance](#objetivos-y-alcance)
 - [Key Performance Indicators - KPI's](#key-performance-indicators---kpis)
 - [Stack Tecnologico - Pipeline](#stack-tecnológico---pipeline)
-- [Metodología de Trabajo](#metodologia-trabajo)
+- [Metodología de Trabajo](#stack-tecnológico---pipeline)
 - [Datos](#datos)
 - [Modelo de Recomendación](#modelo-de-recomendacion)
 -----
@@ -54,6 +54,7 @@ En el repositorio se encuentran los siguientes archivos:
 
 -----
 # <font color='#307A71'>**Introducción** <a name="introduccion"></a></font>
+
 
 Como consultores de datos, centrados en el análisis del mercado del turismo estadounidense, presentamos a continuación el desarrollo de este proyecto. Nuestra misión es proporcionar a los clientes finales herramientas que les permitan mejorar sus campañas de marketing, tomar decisiones informadas sobre inversiones y ofrecer recomendaciones basadas en experiencias previas para sus usuarios.
 
