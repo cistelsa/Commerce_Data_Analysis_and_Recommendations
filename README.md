@@ -65,7 +65,7 @@ En este repositorio, encontrará detalles sobre nuestra metodología, análisis 
 -----
 
 -----
-# <font color='#307A71'>**Entendimiento de la Situación Actual del Sector** <a name="entendimiento"></a></font>
+# <font color='#307A71'>**Entendimiento de la Situación Actual del Sector**<a name="entendimiento"></a></font>
 
 En la actualidad la opinión de los usuarios se ha convertido en un insumo importante para la toma de decisiones en las organizaciones. Sin importar el tamaño de las mismas, la experiencia que proporciona un producto y/o servicio se ha venido transformando con el paso del tiempo y el uso de las tecnologías, pues estas permiten el estar más interconectados, indistintamente del lugar en el que nos encontremos.
 
@@ -78,7 +78,7 @@ Sin embargo, toda esta información no es de utilidad sin el procesamiento y man
 -----
 
 -----
-# <font color='#307A71'>**Objetivos y Alcance** <a name="objetivos"></a></font>
+# <font color='#307A71'>**Objetivos y Alcance**<a name="objetivos"></a></font>
 
 ## **_♦ Objetivo General_**
 
@@ -99,7 +99,7 @@ Proporcionar al cliente un análisis detallado de la opinión de sus usuarios en
 -----
 
 -----
-# <font color='#307A71'>**Key Performance Indicators - KPI's** <a name="kpi"></a></font>
+# <font color='#307A71'>**Key Performance Indicators - KPI's**<a name="kpi"></a></font>
 
 + <font color='##74A608'>**Índice de satisfacción:**</font> La opinión inmediata de los clientes tras finalizar la interacción con la empresa es una
 buena forma de conocer su percepción sobre el servicio brindado .
@@ -125,7 +125,7 @@ ADR =Ingresos obtenidos a través de habitaciones / Número de habitaciones vend
     - Comparar indices de satisfaccion por depedencia o sucursal, por grupo de edad.
     - Mediciones de Índice de quejas o inconveniencias de los clientes.
 
-# <font color='#307A71'>**Stack Tecnológico - Pipeline** <a name="pipeline"></a></font>
+# <font color='#307A71'>**Stack Tecnológico - Pipeline**<a name="pipeline"></a></font>
 
 Son diversas herramientas las cuales nos van a ayudar a cumplir nuestros objetivos a nivel Técnico y Profesional, a continuación se detallan de la mejor forma:
 
