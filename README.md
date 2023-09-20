@@ -106,19 +106,18 @@ Proporcionar al cliente un análisis detallado de la opinión de sus usuarios en
 + <font color='##74A608'>**Índice de satisfacción del cliente :**</font> La opinión inmediata de los clientes tras finalizar la interacción con la empresa es una
 buena forma de conocer su percepción sobre el servicio brindado .
 
-   numero_de_clientes_satisfechos/total_de_clientes_encuestados*100  
+  Numero_de_clientes_satisfechos/total_de_clientes_encuestados*100  
   Es decir, el nivel de puntuación de satisfacción del cliente de la empresa que utilizamos en este ejemplo es del 72,5%.
-  
 
-+ <font color='##74A608'>**NPS(net promoter score) Puntuación Neta del Promotor:**</font> evalúa el grado en que un cliente recomienda un cierto rubro (si un cliente aprecia un servicio lo suficiente como para recomendarla a otros)
++ <font color='##74A608'>**Net Promoter Score(NPS) Puntuación Neta del Promotor:**</font> evalúa el grado en que un cliente recomienda un cierto rubro (si un cliente aprecia un servicio lo suficiente como para recomendarla a otros)
 % Detractores - % Promotores = NPS
 
-+ <font color='##74A608'>**Índice de Penetración del Mercado (MPI):**</font> la penetración del mercado se centra en reforzar la relación e interacción de los clientes con el servicio a fin de aumentar el compromiso o engagement de las personas con el servicio prestado. % MPI = Clientes que accedieron al servicio / tamaño total de mercado para este servicio
++ <font color='##74A608'>**Índice de Penetración del Mercado (MPI):**</font> la penetración del mercado se centra en reforzar la relación e interacción de los clientes con el servicio a fin de aumentar el compromiso o engagement de las personas con el servicio prestado. % MPI = Clientes que accedieron al servicio / tamaño total de mercado para este servicio.
 
-+ <font color='##74A608'>**El Coste de Adquisición del Cliente o CAC:**</font> cuánto dinero has utilizado para capturar a nuevos clientes .CAC = (Marketing + Ventas) / Clientes Adquiridos ,
++ <font color='##74A608'>**El Coste de Adquisición del Cliente o CAC:**</font> cuánto dinero has utilizado para capturar a nuevos clientes .CAC = (Marketing + Ventas) / Clientes Adquiridos.
 
-+ <font color='##74A608'> <strong>- tasa de retencion del cliente </strong> Se trata de un porcentaje que mide cuántos clientes conserva una 
- empresa al final de un plazo determinado, después de comparar la adquisición de nuevos clientes contra el número de clientes que se perdieron.
++ <font color='##74A608'>**Tasa de Retencion del Cliente:**</font> Se trata de un porcentaje que mide cuántos clientes conserva una empresa al final de un plazo determinado, después de comparar la adquisición de nuevos clientes contra el número de clientes que se perdieron.
+
 
 
 # <font color='#307A71'>**Stack Tecnológico - Pipeline**<a name="pipeline"></a></font>
@@ -145,8 +144,19 @@ Data Factory: Esta herramienta nos ayuda a tener un flujo de datos entre areas y
 
 ## **_♦ Pipeline_**
 
-El diagrama de Pipeline se encuentra a continuación:
+El diagrama de Pipeline tecnológico se encuentra a continuación:
 
 <img src="5. Sources/Images/pipeline.gif" width="900px"/>
 
 [def]: #stack-tecnológico---pipeline
+
+
+Nuestra Aplicación ofrece a los clientes información precisa respecto a:
+
+1. **Recomendaciones de ubicación para nuevos Hoteles:** hacemos uso de análisis de datos y modelos de machine learning para identificar las ubicaciones óptimas para nuevos hoteles de su cadena, considerando variables como la densidad de población, el turismo, la afluencia de viajeros, eventos locales y los precios de la propiedad raíz, maximizando así su éxito en el mercado.
+
+2. **Recomendaciones para segmentación de Anuncios en Google y Redes Sociales:** Utilizamos análisis de datos y modelos de machine learning para recomendar estrategias de segmentación y palabras clave altamente efectivas en Google y redes sociales, considerando la demografía, el turismo, los viajeros y los eventos locales de ubicaciones específica, optimizando así su presencia en línea y aumentando la conversión.
+
+3. **Outsourcig Logístico:** identificamos áreas de mejora a partir de opiniones y calificaciones negativas, impulsando una experiencia de hospedaje más satisfactoria.
+
+Respecto a lo desarrollado definimos unos limites y lo que no podemos hacer, no podemos ofrecer el servicio al 100% del gremio ya que si son cadenas de Hoteles nuevas no tenemos un histórico de data para ofrecer el servicio.
