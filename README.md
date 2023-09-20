@@ -117,11 +117,8 @@ buena forma de conocer su percepción sobre el servicio brindado .
 
 + <font color='##74A608'>**El Coste de Adquisición del Cliente o CAC:**</font> cuánto dinero has utilizado para capturar a nuevos clientes .CAC = (Marketing + Ventas) / Clientes Adquiridos ,
 
-+ <font color='##74A608'> <strong>- tasa de retencion del cliente </strong>
-
-Se trata de un porcentaje que mide cuántos clientes conserva una empresa al final de un plazo determinado, después de comparar la adquisición de nuevos clientes contra el número de clientes que se perdieron.
-
-${Clientes\quad al \quad final \quad de \quad un \quad periodo - clientes \quad nuevos \quad adquiridos \quad durante \quad el \quad periodo \over clientes \quad al \quad comienzo \quad del \quad periodo}*100$
++ <font color='##74A608'> <strong>- tasa de retencion del cliente </strong> Se trata de un porcentaje que mide cuántos clientes conserva una 
+ empresa al final de un plazo determinado, después de comparar la adquisición de nuevos clientes contra el número de clientes que se perdieron.
 
 
 # <font color='#307A71'>**Stack Tecnológico - Pipeline**<a name="pipeline"></a></font>
