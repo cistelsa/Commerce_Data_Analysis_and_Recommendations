@@ -115,21 +115,14 @@ buena forma de conocer su percepción sobre el servicio brindado .
 
 + <font color='##74A608'>**Índice de Penetración del Mercado (MPI):**</font> la penetración del mercado se centra en reforzar la relación e interacción de los clientes con el servicio a fin de aumentar el compromiso o engagement de las personas con el servicio prestado. % MPI = Clientes que accedieron al servicio / tamaño total de mercado para este servicio
 
-+ <font color='##74A608'>**ROI(retorno de la inversion):**</font> es un indicador que permite saber cuánto dinero la empresa perdió o ganó con las inversiones hechas (en anuncios pagados, nuevas herramientas, entrenamientos, etc) ROI =(GANANCIA -INVERSION)/INVERSION por cada peso invertido en esta campaña, el negocio obtuvo N de vuelta.
-
 + <font color='##74A608'>**El Coste de Adquisición del Cliente o CAC:**</font> cuánto dinero has utilizado para capturar a nuevos clientes .CAC = (Marketing + Ventas) / Clientes Adquiridos ,
 
-+ <font color='##74A608'>**Tarifa Diaria Promedio (ADR):**</font> Esta métrica muestra el **ingreso promedio (de todas las habitaciones) ** durante un período de tiempo y lo divide por la cantidad de habitaciones vendidas .
-ADR =Ingresos obtenidos a través de habitaciones / Número de habitaciones vendidas
++ <font color='##74A608'> <strong>- tasa de retencion del cliente </strong>
 
-+ <font color='##74A608'>**Índice de Tasa Promedio (ARI):**</font> esta métrica también se utiliza para comparar las tarifas diarias promedio de su empresa con otros. Simplemente tome la tarifa diaria promedio y divídala por el ADR de sus competidores antes de multiplicarla por 100. ARI = (su tarifa diaria promedio / tarifa diaria promedio de la competencia) * 100
+Se trata de un porcentaje que mide cuántos clientes conserva una empresa al final de un plazo determinado, después de comparar la adquisición de nuevos clientes contra el número de clientes que se perdieron.
 
-+ <font color='##74A608'>**Ratio de Ingresos Directos (DRR):**</font> DRR muestra el porcentaje de ingresos en línea de fuentes directas (su sitio web) frente a canales de terceros (Booking.com,otros, etc.).
+${Clientes\quad al \quad final \quad de \quad un \quad periodo - clientes \quad nuevos \quad adquiridos \quad durante \quad el \quad periodo \over clientes \quad al \quad comienzo \quad del \quad periodo}*100$
 
-+ <font color='##74A608'>**Crecimiento de la organizacion o empresa en un periodo determinado:** </font> 
-    - Evaluar el desempeño de cada estrategia tomada.
-    - Comparar indices de satisfaccion por depedencia o sucursal, por grupo de edad.
-    - Mediciones de Índice de quejas o inconveniencias de los clientes.
 
 # <font color='#307A71'>**Stack Tecnológico - Pipeline**<a name="pipeline"></a></font>
 
