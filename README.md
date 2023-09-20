@@ -101,8 +101,14 @@ Proporcionar al cliente un análisis detallado de la opinión de sus usuarios en
 -----
 # <font color='#307A71'>**Key Performance Indicators - KPI's**<a name="kpi"></a></font>
 
-+ <font color='##74A608'>**Índice de satisfacción:**</font> La opinión inmediata de los clientes tras finalizar la interacción con la empresa es una
+ KPIs propuestos :
+
++ <font color='##74A608'>**Índice de satisfacción del cliente :**</font> La opinión inmediata de los clientes tras finalizar la interacción con la empresa es una
 buena forma de conocer su percepción sobre el servicio brindado .
+
+   numero_de_clientes_satisfechos/total_de_clientes_encuestados*100  
+  Es decir, el nivel de puntuación de satisfacción del cliente de la empresa que utilizamos en este ejemplo es del 72,5%.
+  
 
 + <font color='##74A608'>**NPS(net promoter score) Puntuación Neta del Promotor:**</font> evalúa el grado en que un cliente recomienda un cierto rubro (si un cliente aprecia un servicio lo suficiente como para recomendarla a otros)
 % Detractores - % Promotores = NPS
