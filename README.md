@@ -1,7 +1,7 @@
 ![banner_tipster](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17438992/5972fc1a-725d-43b7-9d7b-6cd76f0ad165)
 
 
-# <h1 align=center> **COMMERCE DATA ALALYSIS AND RECOMMENDATIONS** <img src="5. Sources/Images/tipster.jpg" width="50px"/></h1>
+# <h1 align=center> **COMMERCE DATA ALALYSIS AND RECOMMENDATIONS** <img src="5_Sources/Images/tipster.jpg" width="50px"/></h1>
 
 
 
@@ -39,7 +39,7 @@ En el repositorio se encuentran los siguientes archivos:
 -----
 # <font color='#307A71'>**Autores** <a name="autores"></a></font>
 
-# <h1 align=center> <img src="5. Sources/Images/equipo.png" width="900px"/></h1>
+# <h1 align=center> <img src="5_Sources/Images/equipo.png" width="900px"/></h1>
 
 
 |Nombre               | Rol                     | Correo                     | GitHub                                          | Linkedin|
@@ -124,29 +124,29 @@ buena forma de conocer su percepción sobre el servicio brindado .
 
 Son diversas herramientas las cuales nos van a ayudar a cumplir nuestros objetivos a nivel Técnico y Profesional, a continuación se detallan de la mejor forma:
 
-<img src="5. Sources/Images/logo_fabric.png" width="25px"/><font color='##74A608'>**Microsoft Fabric:**</font> Es un todo en uno de data, se integran todas las herramientas para ETL, EDA y DA.
+<img src="5_Sources/Images/logo_fabric.png" width="25px"/><font color='##74A608'>**Microsoft Fabric:**</font> Es un todo en uno de data, se integran todas las herramientas para ETL, EDA y DA.
 Se propuso esta herramienta con el fin de adelantarnos a la tendencia, ya que se encuentra en fase Beta y pronto saldrá la versión Oficial, viniendo de Microsoft y la inversión que ha realizado los ultimos años en herramientas de data posicionandose en segundo lugar, tendremos la mejor experiencia en un entorno muy Profesional y nos ayudará para futuros proyectos en diferentes empresas.
 
-<img src="5. Sources/Images/logo_jupyter.png" width="30px"/><font color='##74A608'>**NoteBooks:**</font> Trabajaremos con esta herramienta conectada a Python, SQL y Apache Spark
+<img src="5_Sources/Images/logo_jupyter.png" width="30px"/><font color='##74A608'>**NoteBooks:**</font> Trabajaremos con esta herramienta conectada a Python, SQL y Apache Spark
 Data Factory: Esta herramienta nos ayuda a tener un flujo de datos entre areas y automatización de tareas, tambien es muy importante para la ingesta de datos en el Data WareHouse.
 
-<img src="5. Sources/Images/logo_spark.jpeg" width="30px"/><font color='##74A608'>**Apache Spark:**</font> Hadoop y Spark nos ayuda para el procesamiento de grandes cantidades de datos en forma de nodos, paralelizando el trabajo y siendo más eficiente de acuerdo su configuración y el tipo de archivo que se use, lo podremos gestionar con Python o con SQL.
+<img src="5_Sources/Images/logo_spark.jpeg" width="30px"/><font color='##74A608'>**Apache Spark:**</font> Hadoop y Spark nos ayuda para el procesamiento de grandes cantidades de datos en forma de nodos, paralelizando el trabajo y siendo más eficiente de acuerdo su configuración y el tipo de archivo que se use, lo podremos gestionar con Python o con SQL.
 
-<img src="5. Sources/Images/logo_scikit.png" width="30px"/><font color='##74A608'>**Scikit Learn:**</font> Lo usaremos para crear nuestros modelos de ML, también con una herramienta "Experiment" la cual realizamos un seguimiento del desarrollo a los modelos de ML y validar las hipotesis.
+<img src="5_Sources/Images/logo_scikit.png" width="30px"/><font color='##74A608'>**Scikit Learn:**</font> Lo usaremos para crear nuestros modelos de ML, también con una herramienta "Experiment" la cual realizamos un seguimiento del desarrollo a los modelos de ML y validar las hipotesis.
 
-<img src="5. Sources/Images/logo_powerbi.png" width="50px"/><font color='##74A608'>**Power Bi:**</font> Aprovecharemos esta herramienta para realizar, el analisis y la vizualización de datos creando un Dashboard muy profesional y en la web.
+<img src="5_Sources/Images/logo_powerbi.png" width="50px"/><font color='##74A608'>**Power Bi:**</font> Aprovecharemos esta herramienta para realizar, el analisis y la vizualización de datos creando un Dashboard muy profesional y en la web.
 
-<img src="5. Sources/Images/logo_matplotlib.png" width="30px"/><font color='##74A608'>**MatPlotlib:**</font> Es indispensable para crear el mejor informe EDA para que nuestros clientes puedan acceder a él de la forma más legible e intuitivo, será necesario traer nuestros modelos de ML allí y exponerlos.
+<img src="5_Sources/Images/logo_matplotlib.png" width="30px"/><font color='##74A608'>**MatPlotlib:**</font> Es indispensable para crear el mejor informe EDA para que nuestros clientes puedan acceder a él de la forma más legible e intuitivo, será necesario traer nuestros modelos de ML allí y exponerlos.
 
-<img src="5. Sources/Images/logo_kusto.png" width="30px"/><font color='##74A608'>**Kusto (KQL):**</font> Muy posiblemente usaremos streaming de datos, no es algo seguro pero lo proponemos desde el inicio.
+<img src="5_Sources/Images/logo_kusto.png" width="30px"/><font color='##74A608'>**Kusto (KQL):**</font> Muy posiblemente usaremos streaming de datos, no es algo seguro pero lo proponemos desde el inicio.
 
-<img src="5. Sources/Images/logo_azure.png" width="30px"/><font color='##74A608'>**Microsoft Azure:**</font> Usaremos la nube de Microsoft para apoyarnos respecto a Bases de datos de SQL Server de ser necesarias, también para realizar el deploy de la aplicación para nuestros clientes a través de Fast API, usando Docker.
+<img src="5_Sources/Images/logo_azure.png" width="30px"/><font color='##74A608'>**Microsoft Azure:**</font> Usaremos la nube de Microsoft para apoyarnos respecto a Bases de datos de SQL Server de ser necesarias, también para realizar el deploy de la aplicación para nuestros clientes a través de Fast API, usando Docker.
 
 ## **_♦ Pipeline_**
 
 El diagrama de Pipeline tecnológico se encuentra a continuación:
 
-<img src="5. Sources/Images/pipeline.gif" width="900px"/>
+<img src="5_Sources/Images/pipeline.gif" width="900px"/>
 
 [def]: #stack-tecnológico---pipeline
 
