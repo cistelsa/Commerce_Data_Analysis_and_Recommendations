@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>MVP: Modelo ML Recomendación Hotelera</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link href="{{url_for('static', path='/css/styles.css')}}" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', path='/img/favicon.ico')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        var hotelesOptions = {{ selected_data_hotels|tojson }};
+        
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div id="select-logo">       
+        <img src="{{url_for('static', path='/img/logo_tipster.png')}}" alt="Tipster" class="logo">
+        </div>
+        <h1>MVP: Modelo ML Recomendación Hotelera</h1>
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="{{url_for('static', path='/img/icono_youtube.png')}}" alt="Video"></a>
+            <a href="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations" target="_blank"><img src="{{url_for('static', path='/img/icono_github.png')}}" alt="GitHub"></a>
+            <a href="#" target="_blank"><img src="{{url_for('static', path='/img/icono_web.png')}}" alt="Sitio Web"></a>
+        </div>
+    </header>
+    <div class="title">
+        <h1>MVP: Modelo ML Recomendación Hotelera</h1>
+      </div>
+    <div class="search" id="flex-container">
+        <div id="select-container">
+                        
+             
+                <label for="recomendacion-select"><span id="label-input">Consulta la calificación de sentimientos de los Hoteles:</span>
+                <select class="js-example-basic-single" id="recomendacion-select" name="recomendacion">
+                    <option value="" disabled selected>Selecciona un Hotel</option>
+                </select></label>
+                <button id="consultar-recomendacion-button">Ir</button>
+                <br>
+                <br>            
+                <label for="recomendacion-2-select"><span id="label-input">Consulta la recomendación de 6 Hoteles similares :</span>
+                <select class="js-example-basic-single" id="recomendacion-2-select" name="recomendacion-2">
+                    <option value="" disabled selected>Selecciona un Hotel</option>
+                </select></label>
+                <button id="consultar-recomendacion-2-button">Ir</button>
+
+                <div id="resultado-container"></div>
+
+        </div>
+        <div class="other-content">
+            <h2>BETA DASHBOARD</h2>
+            <br>
+            <iframe title="Report Section" width="100%" height="541.25" src="https://app.fabric.microsoft.com/reportEmbed?reportId=ea6d161b-6f75-48d9-b633-5df58615fc68&autoAuth=true&ctid=77f8c303-ef48-412f-bbb8-089de7b82c8a" frameborder="0" allowFullScreen="true"></iframe>
+            <br>
+            <h2>KEY ENABLER</h2>
+            <img src="{{url_for('static', path='/img/banner_herramientas.png')}}" alt="Banner Herramientas" class="herramientas">
+            <br>
+            Próximamente tendremos actualizaciónes de nuevas fuentes de datos, disponibilidad de cuartos de Hotel en tiempo real y con Geolocalización...
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    
+    
+    <section id="pie-pagina">Technical Project Manager: Laydy Peñaloza - Data Engineer: Camilo Ortiz - Data Analyst: Mayren Silva, Yésica León - Data Scientist and ML: Aldemar Bohorquez - Modelo y Proyecto 100% Autoría - Todos los derechos reservados 2023</section>
+    <script src="{{url_for('static', path='/js/script.js')}}"></script>
+    
+        <script>
+        $(document).ready(function () {
+    
+        var recomendacionInput = $("#recomendacion-select");
+    
+    // Inicializar Select2 en el campo de texto
+    recomendacionInput.select2({
+        data: hotelesOptions,
+        minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+        placeholder: "Selecciona un Hotel"
+    });
+
+    // Manejar selección de película y clic en el botón
+    $("#consultar-recomendacion-button").click(function () {
+        var titulo = recomendacionInput.val();
+
+         
+            $.ajax({
+                type: "GET",
+                url: "/recomendacion_1",
+                data: { titulo: titulo },
+                success: function (response) {
+                    var resultadoContainer = $("#resultado-container");
+                    // Definir funciones para convertir valores nulos o vacíos en 0
+                    function convertirAEntero(valor) {
+                        return valor ? parseInt(valor) : 0;
+                    }
+                    // Formatear el array de recomendación como cadena JSON
+                    var NegativeFormatted = convertirAEntero(JSON.stringify(response.Negative));
+                    var PositiveFormatted = convertirAEntero(JSON.stringify(response.Positive));
+                    var VeryNegativeFormatted = convertirAEntero(JSON.stringify(response['Very Negative']));
+                    var VeryPositiveFormatted = convertirAEntero(JSON.stringify(response['Very Positive']));
+                    var GeneralSentiment = (parseInt(PositiveFormatted) + parseInt(VeryPositiveFormatted)) - (parseInt(NegativeFormatted) + parseInt(VeryNegativeFormatted))
+                    // Asigna etiquetas de texto en función del valor numérico
+                    var etiquetaSentimiento = '';
+                    if (GeneralSentiment <= -20) {
+                        etiquetaSentimiento = 'Muy Negativo';
+                    } else if (GeneralSentiment > -20 && GeneralSentiment < 0) {
+                        etiquetaSentimiento = 'Negativo';
+                    } else if (GeneralSentiment >= 1 && GeneralSentiment < 20) {
+                        etiquetaSentimiento = 'Positivo';
+                    } else {
+                        etiquetaSentimiento = 'Muy Positivo';
+                    }
+
+                resultadoContainer.html("Tu consulta es <strong>" + titulo + "</strong>. <br><br><strong>Sentimiento General:</strong> <br><br>" + etiquetaSentimiento + "<br><br><strong>Cantidad Sentimiento Positivo:</strong> <br><br>" + PositiveFormatted + "<br><br><strong>Cantidad Sentimiento Muy Positivo:</strong> <br><br>" + VeryPositiveFormatted + "<br><br><strong>Cantidad Sentimiento Negativo:</strong> <br><br>" + NegativeFormatted + "<br><br><strong>Cantidad Sentimiento Muy Negativo:</strong> <br><br>" + VeryNegativeFormatted);
+                }
+
+            });
+        });
+
+
+        var recomendacion_2Input = $("#recomendacion-2-select");
+    
+    // Inicializar Select2 en el campo de texto
+    recomendacion_2Input.select2({
+        data: hotelesOptions,
+        minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+        placeholder: "Selecciona un Hotel"
+    });
+
+
+        // Manejar selección de película y clic en el botón
+    $("#consultar-recomendacion-2-button").click(function () {
+        var titulo_2 = recomendacion_2Input.val();
+
+         
+            $.ajax({
+                type: "GET",
+                url: "/recomendacion_2",
+                data: { titulo_2: titulo_2 },
+                success: function (response) {
+                    var resultadoContainer = $("#resultado-container");
+                    
+                resultadoContainer.html(response.recomendacion_2);
+                }
+
+            });
+        });
+
+        });
+    </script>
+</body>
+</html>

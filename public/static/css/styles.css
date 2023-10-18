@@ -1,0 +1,364 @@
+html,
+
+body {
+  
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #dededea3;
+  margin: 0;
+}
+
+header h1 {
+  color: #a9a9a9;
+}
+
+.container {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 30px;
+}
+
+table.dataframe {
+  border-spacing: 0px;
+  border-color: #6b6b6b;
+  border-collapse: collapse;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: none !important;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border: 1px solid #34495e;
+}
+
+.select2.select2-container {
+  width: 80% !important;
+  height: 35px;
+}
+
+.select2.select2-container .select2-selection {
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 34px;
+  margin-bottom: 15px;
+  outline: none !important;
+  transition: all .15s ease-in-out;
+}
+
+.select2.select2-container .select2-selection .select2-selection__rendered {
+  color: #333;
+  line-height: 32px;
+  padding-right: 33px;
+}
+
+.select2.select2-container .select2-selection .select2-selection__arrow {
+  background: #f8f8f8;
+  border-left: 1px solid #ccc;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  height: 32px;
+  width: 33px;
+}
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--single {
+  background: #f8f8f8;
+}
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--single .select2-selection__arrow {
+  -webkit-border-radius: 0 3px 0 0;
+  -moz-border-radius: 0 3px 0 0;
+  border-radius: 0 3px 0 0;
+}
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--multiple {
+  border: 1px solid #34495e;
+}
+
+.select2.select2-container .select2-selection--multiple {
+  height: auto;
+  min-height: 34px;
+}
+
+.select2.select2-container .select2-selection--multiple .select2-search--inline .select2-search__field {
+  margin-top: 0;
+  height: 32px;
+}
+
+.select2.select2-container .select2-selection--multiple .select2-selection__rendered {
+  display: block;
+  padding: 0 4px;
+  line-height: 29px;
+}
+
+.select2.select2-container .select2-selection--multiple .select2-selection__choice {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 4px 4px 0 0;
+  padding: 0 6px 0 22px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  position: relative;
+}
+
+.select2.select2-container .select2-selection--multiple .select2-selection__choice .select2-selection__choice__remove {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  margin: 0;
+  text-align: center;
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.select2-container .select2-dropdown {
+  background: transparent;
+  border: none;
+  margin-top: -5px;
+}
+
+.select2-container .select2-dropdown .select2-search {
+  padding: 0;
+}
+
+.select2-container .select2-dropdown .select2-search input {
+  outline: none !important;
+  border: 1px solid #34495e !important;
+  border-bottom: none !important;
+  padding: 4px 6px !important;
+}
+
+.select2-container .select2-dropdown .select2-results {
+  padding: 0;
+}
+
+.select2-container .select2-dropdown .select2-results ul {
+  background: #fff;
+  border: 1px solid #34495e;
+}
+
+.select2-container .select2-dropdown .select2-results ul .select2-results__option--highlighted[aria-selected] {
+  background-color: #3498db;
+}
+
+#resultado-container {
+    background-color: #555;
+    color: #c8c8c8;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 90%;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: inline-table;
+
+}
+
+section#pie-pagina {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #555;
+  color: #c8c8c8;
+  padding: 3px;
+  max-width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#select-container {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+.other-content{
+  flex: 1;
+  padding: 30px;
+}
+
+.other-content h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #5e5e5e;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+button {
+  background-image: linear-gradient(to right, #adadad, #5e5e5e);
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 20px #c2c2c294;
+  transition: box-shadow .3s ease-in-out;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+
+/* Estilos para el encabezado */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #555;
+  color: white;
+}
+
+/* Estilos para el logo */
+.logo {
+  height: 50px;
+}
+
+#select-logo {
+  flex: 0.2;
+  margin: 0;
+  height: 66px;
+  padding-top: 16px;
+  background-color: #2bff9c;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  height: 30px;
+}
+
+#flex-container {
+  display: flex;
+}
+
+.herramientas {
+  width: 100%;
+}
+
+label {
+  color: #444;
+}
+
+#label-input {
+  float: left;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 500px) {
+#flex-container {
+  flex-direction: column;
+}
+
+.logo {
+  height: 25px;
+}
+
+#select-logo {
+  height: 90px;
+  padding-top: 17px;
+}
+
+.social-icons img {
+  height: 25px;
+}
+
+.social-icons {
+ flex-direction: column;
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.title h1 {
+  font-size: 100% !important;
+  line-height: 3 !important;
+  text-align: center !important;
+}
+
+#resultado-container {
+  position: fixed;
+  bottom: 0; /* Cambiado a 0 para que esté pegado en la parte inferior */
+  left: 0;
+  width: 100%; /* Cambiado a 100% para ocupar todo el ancho */
+  padding: 10px; /* Espacio interno para el contenido */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  z-index: 1000; /* Valor de z-index para asegurar que esté por encima de otros elementos */
+  display: inline-table;
+}
+
+section#pie-pagina {
+  font-size: 10px;
+}
+}
+
+/* ---------------------------------------------
+    Title Style Attributes
+--------------------------------------------- */
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  z-index: -1;
+}
+.title h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #919191;
+  text-transform: uppercase;
+  font-size: 131px;
+  letter-spacing: 10px;
+  line-height: 1.5;
+}
