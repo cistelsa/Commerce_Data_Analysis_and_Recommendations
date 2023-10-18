@@ -58,7 +58,7 @@ def get_sentiments_count(title, preview_recommendations):
     
 def cargar_datos_y_generar_recomendaciones():
     # Ruta del archivo ZIP
-    zip_file_path = '2_Datasets/beta/Hotelbeds/df_hotels_.zip'
+    zip_file_path = '2_Datasets/beta/hotelbeds/df_hotels_.zip'
 
     # Abre el archivo ZIP
     with zipfile.ZipFile(zip_file_path, 'r') as zip_file:
