@@ -159,7 +159,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 2_Datasets/original/hotelbeds
-2_Datasets/beta/hotelbeds
 2_Datasets/beta/yelp/review.parquet
 2_Datasets/beta/yelp/user.parquet
 1_ETL/APIs/keys.py
