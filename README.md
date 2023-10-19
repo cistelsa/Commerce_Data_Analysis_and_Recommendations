@@ -1,9 +1,13 @@
 ![banner_tipster](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17438992/5972fc1a-725d-43b7-9d7b-6cd76f0ad165)
 
 
-# <h1 align=center> **COMMERCE DATA ALALYSIS AND RECOMMENDATIONS** <img src="5_Sources/Images/tipster.jpg" width="50px"/></h1>
+# <h1 align=center> **COMMERCE DATA ALALYSIS AND RECOMMENDATIONS** <img src="5_Sources/Images/icono_tipster_green.png" width="50px"/></h1>
 
-
+## Tipster ![marca-version](https://img.shields.io/badge/Versi%C3%B3n-1.0.2-bluegreen?style=for-the-badge&logo=googlehome)
+![marca-licencia](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge&logo=apachespark)
+![marca-lenguaje](https://img.shields.io/badge/Python-v3.10.10-yellowgreen?style=for-the-badge&logo=python)
+![marca-status](https://img.shields.io/badge/Status-Project%20Advances%20Indefinitely-orangegreen?style=for-the-badge&logo=apachehadoop)
+![marca-status](https://img.shields.io/badge/Authors-5-blue?style=for-the-badge&logo=azurepipelines)
 
 -----
 
