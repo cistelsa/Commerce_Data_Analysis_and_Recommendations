@@ -9,11 +9,11 @@ import functions as f
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="public/static"), name="static")
+app.mount("/static", StaticFiles(directory="8_Public/static"), name="static")
 app.mount("/launch", StaticFiles(directory="2_Datasets/launch"), name="launch")
 app.mount("/csv", StaticFiles(directory="/"), name="csv")
 
-templates = Jinja2Templates(directory="public/templates")
+templates = Jinja2Templates(directory="8_Public/templates")
 
 
 
