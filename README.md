@@ -160,3 +160,5 @@ Nuestra Aplicación ofrece a los clientes información precisa respecto a:
 3. **Outsourcig Logístico:** identificamos áreas de mejora a partir de opiniones y calificaciones negativas, impulsando una experiencia de hospedaje más satisfactoria.
 
 Respecto a lo desarrollado definimos unos limites y lo que no podemos hacer, no podemos ofrecer el servicio al 100% del gremio ya que si son cadenas de Hoteles nuevas no tenemos un histórico de data para ofrecer el servicio.
+
+https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17438992/fce4aa00-97e7-410e-b641-de1286028069
