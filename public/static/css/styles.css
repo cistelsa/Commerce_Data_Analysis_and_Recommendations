@@ -158,11 +158,12 @@ table.dataframe {
     color: #c8c8c8;
     padding: 20px;
     border-radius: 5px;
-    width: 90%;
-    max-width: 90%;
+    width: 85%;
+    max-width: 85%;
     margin-left: 15px;
     margin-top: 15px;
-    display: inline-table;
+    display: block;
+    overflow-x: auto;
 
 }
 
@@ -309,7 +310,8 @@ header h1 {
   padding: 10px; /* Espacio interno para el contenido */
   box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
   z-index: 1000; /* Valor de z-index para asegurar que esté por encima de otros elementos */
-  display: inline-table;
+  display: block;
+  overflow-x: auto;
 }
 
 section#pie-pagina {

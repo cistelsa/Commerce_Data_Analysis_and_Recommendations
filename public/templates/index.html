@@ -11,7 +11,9 @@
     
     <script>
         var hotelesOptions = {{ selected_data_hotels|tojson }};
-        
+        var estadoOptions = {{ selected_data_state|tojson }};
+        var ciudadOptions = {{ selected_data_city|tojson }};
+        var poiOptions = {{ selected_data_poi|tojson }};
     </script>
     
 </head>
@@ -32,7 +34,34 @@
       </div>
     <div class="search" id="flex-container">
         <div id="select-container">
-                        
+            <label for="state-select"><span id="label-input">Consulta la recomendación de 6 Hoteles similares :</span></label>
+            <br>
+                <div style="display: flex; align-items: center;">
+                                        
+                    <div style="flex: 1;">
+                        <label for="state-select">
+                            <select class="js-example-basic-single" id="state-select" name="state">
+                                <option value="" disabled selected>Estado</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="city-select">
+                            <select class="js-example-basic-single" id="city-select" name="city">
+                                <option value="" disabled selected>Ciudad</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="poi-select">
+                            <select class="js-example-basic-single" id="poi-select" name="poi">
+                                <option value="" disabled selected>Punto de Interes</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button id="consultar-hoteles-button">Ir</button>
+                </div>
+                <br>
              
                 <label for="recomendacion-select"><span id="label-input">Consulta la calificación de sentimientos de los Hoteles:</span>
                 <select class="js-example-basic-single" id="recomendacion-select" name="recomendacion">
@@ -82,7 +111,7 @@
         placeholder: "Selecciona un Hotel"
     });
 
-    // Manejar selección de película y clic en el botón
+    // Manejar selección de hotel y clic en el botón
     $("#consultar-recomendacion-button").click(function () {
         var titulo = recomendacionInput.val();
 
@@ -145,6 +174,106 @@
                     var resultadoContainer = $("#resultado-container");
                     
                 resultadoContainer.html(response.recomendacion_2);
+                }
+
+            });
+        });
+
+
+            
+    var estadoInput = $("#state-select");
+
+// Inicializar Select2 en el campo de texto
+estadoInput.select2({
+    data: estadoOptions,
+    minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+    placeholder: "Estado"
+});
+
+   
+    var ciudadInput = $("#city-select");
+
+// Inicializar Select2 en el campo de texto
+ciudadInput.select2({
+    data: ciudadOptions,
+    minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+    placeholder: "Ciudad"
+});
+
+    
+    var poiInput = $("#poi-select");
+
+// Inicializar Select2 en el campo de texto
+poiInput.select2({
+    data: poiOptions,
+    minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+    placeholder: "Punto de Interes"
+});
+
+
+estadoInput.change(function () {
+        var estadoSeleccionado = estadoInput.val();
+        if (estadoSeleccionado) {
+            // Realiza una solicitud para obtener ciudades en función del estado seleccionado
+            $.ajax({
+                type: "GET",
+                url: "/obtener_ciudades", // Debes definir una ruta adecuada en tu backend
+                data: { estado: estadoSeleccionado },
+                success: function (response) {
+                    ciudadInput.empty(); // Borra las opciones actuales
+                    // Agrega una opción en blanco al inicio
+                ciudadInput.append(new Option("Ciudad", ""));
+                // Agrega las ciudades obtenidas
+                for (var i = 0; i < response.ciudades.length; i++) {
+                    ciudadInput.append(new Option(response.ciudades[i], response.ciudades[i]));
+                }
+                    poiInput.empty(); // Borra las opciones actuales
+                    poiInput.append(new Option("Punto de Interés", ""));
+                // Agrega las ciudades obtenidas
+                for (var i = 0; i < response.poi.length; i++) {
+                    poiInput.append(new Option(response.poi[i], response.poi[i]));
+                }
+                }
+            });
+        }
+    });
+
+    ciudadInput.change(function () {
+        var ciudadSeleccionada = ciudadInput.val();
+        if (ciudadSeleccionada) {
+            // Realiza una solicitud para obtener puntos de interés en función de la ciudad seleccionada
+            $.ajax({
+                type: "GET",
+                url: "/obtener_poi", // Debes definir una ruta adecuada en tu backend
+                data: { ciudad: ciudadSeleccionada },
+                success: function (response) {
+                    poiInput.empty();
+                    poiInput.append(new Option("Punto de Interés", ""));
+                // Agrega las ciudades obtenidas
+                for (var i = 0; i < response.poi.length; i++) {
+                    poiInput.append(new Option(response.poi[i], response.poi[i]));
+                }
+                }
+            });
+        }
+    });
+
+
+// Manejar selección de estados, ciudades, puntos de interes y clic en el botón
+$("#consultar-hoteles-button").click(function () {
+        var estado = estadoInput.val() || '0';
+        var ciudad = ciudadInput.val() || '0';
+        var poi = poiInput.val() || '0';
+
+         
+            $.ajax({
+                type: "GET",
+                url: "/busca_hotel",
+                data: { estado: estado, ciudad: ciudad, poi: poi },
+                success: function (response) {
+                    var resultadoContainer = $("#resultado-container");
+                    
+                resultadoContainer.html(response.busca_hotel);
                 }
 
             });
