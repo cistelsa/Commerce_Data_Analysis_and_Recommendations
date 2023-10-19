@@ -186,7 +186,7 @@
 // Inicializar Select2 en el campo de texto
 estadoInput.select2({
     data: estadoOptions,
-    minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+    minimumInputLength: 2,  // Comenzar a filtrar después de ingresar al menos 2 caracteres
     placeholder: "Estado"
 });
 
@@ -196,7 +196,7 @@ estadoInput.select2({
 // Inicializar Select2 en el campo de texto
 ciudadInput.select2({
     data: ciudadOptions,
-    minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+    minimumInputLength: 2,  // Comenzar a filtrar después de ingresar al menos 2 caracteres
     placeholder: "Ciudad"
 });
 
@@ -206,7 +206,7 @@ ciudadInput.select2({
 // Inicializar Select2 en el campo de texto
 poiInput.select2({
     data: poiOptions,
-    minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+    minimumInputLength: 2,  // Comenzar a filtrar después de ingresar al menos 2 caracteres
     placeholder: "Punto de Interes"
 });
 
@@ -222,13 +222,22 @@ estadoInput.change(function () {
                 success: function (response) {
                     ciudadInput.empty(); // Borra las opciones actuales
                     // Agrega una opción en blanco al inicio
-                ciudadInput.append(new Option("Ciudad", ""));
+                    ciudadInput.select2({
+                minimumInputLength: 0,
+                placeholder: "Ciudad"
+                })
+                ciudadInput.append(new Option(" ", ""));
                 // Agrega las ciudades obtenidas
                 for (var i = 0; i < response.ciudades.length; i++) {
                     ciudadInput.append(new Option(response.ciudades[i], response.ciudades[i]));
                 }
+                
                     poiInput.empty(); // Borra las opciones actuales
-                    poiInput.append(new Option("Punto de Interés", ""));
+                    poiInput.select2({
+                        minimumInputLength: 0, 
+                        placeholder: "Punto de Interes"
+                    });
+                    poiInput.append(new Option(" ", ""));
                 // Agrega las ciudades obtenidas
                 for (var i = 0; i < response.poi.length; i++) {
                     poiInput.append(new Option(response.poi[i], response.poi[i]));
