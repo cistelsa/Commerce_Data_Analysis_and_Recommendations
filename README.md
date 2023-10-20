@@ -17,8 +17,8 @@
 - [Autores](#autores)
 - [Introducción](#introducción)
 - [Entendimiento de la Situación Actual del Sector](#entendimiento-de-la-situación-actual-del-sector)
-- [Objetivos y Alcance](#objetivos-y-alcance)
-- [Key Performance Indicators - KPI's](#key-performance-indicators---kpis)
+- [Alcance](#alcance)
+- [Objetivos y Key Performance Indicators - KPI's](#objetivos-y-key-performance-indicators---kpis)
 - [Stack Tecnologico - Pipeline](#stack-tecnológico---pipeline)
 - [Metodología de Trabajo](#stack-tecnológico---pipeline)
 - [Datos](#datos)
@@ -31,12 +31,27 @@
 
 En el repositorio se encuentran los siguientes archivos:
 
-- `1. ETL`: Archivos en los cuales se documenta el proceso de ETL (Extract, Transform, Load).
-- `2. Datasets`: Contiene el conjuntos de datos normalizados, respecto del origen, para ser utilizados en el proyecto y que no provienen de API's.
-- `3. EDA`: Archivos en los cuales se documenta el proceso de EDA (Exploratory Data Analysis).
-- `4. Model ML`: Jupyter Notebooks con pruebas para el desarrollo del Modelo de Machine Learning para el proyecto.
-- `5. Sources`: Aquí se encuentra los archivos anexos como imágenes, videos y demás recursos necesarios para el desarrollo del proyecto.
-- `6. Documentation`: Documentos relacionados al desarrollo del proyecto.
+| **`Carpeta Principal`** | **`Subcarpeta`** | **`Descripción`** | **`Link`** |
+|-------------------------|------------------|-------------------|------------|
+|1_ETL                    |                  |Esta carpeta contiene los primeros archivos de ETL realizados al inicio del proyecto y los ETL de Normalización de Tablas producto de la automatización en Microsoft Fabric. |[1_ETL](1_ETL)    |
+|1_ETL                    |APIs              |Subcarpeta con la API utilizada para la extracción de información HotelBeds.                |                  |
+|2_Datasets               |                  |Carpeta raiz con los Datasets del proyecto.|[2_Datasets](2_Datasets)      |
+|2_Datasets               |beta              |Subcarpeta con los Datasets en formato ".csv" originados luego del primer ETL aplicado.      |                  |
+|2_Datasets               |launch            |Subcarpeta con los Datasets en formato ".csv" y ".zip" originados luego del proceso de "EDA" - Análisis Exploratorio de Datos.|                 |
+|3_EDA                    |                  |Carpeta que contiene los notebooks con los "EDA" - Análisis Exploratorio de Datos, de los datasets de la empresa.|[3_EDA](3_EDA)           |
+|4_Model_ML               |                  |Carpeta con los Notebooks de los Modelos de Machine Learning aplicados al proyecto.    |[4_Model_ML](4_Model_ML)                  |
+|5_Sources                |                  |Carpeta de recursos web.|[5_Sources](5_Sources)       |
+|5_Sources                |Images            |Subarpeta con las imágenes utilizadas en los archivos .md, .ipynb, web.|  |
+|5_Sources                |Videos            |Subcarpeta con los videos utilizados en los archivos .md, .ipynb, web.|     |
+|6_Documentation          |                  |Esta carpeta principal contiene información sobre material de apoyo o complementario necesario para el desarrollo del proyecto.|[6_Documentation](6_Documentation)            |
+|6_Documentation          |Dictionaries      |Contiene los diccionarios de los Modelos de Entidad Relación de las Bases de Datos.|                   |
+|6_Documentation          |KPI               |Contiene información sobre los KPI propuestos para el proyecto.|       |
+|6_Documentation          |Presentations_Sprint|Contiene las presentaciones realizadas por cada sprint de avance entregado.|  |
+|7_Dashboard              |                  |En esta carpeta se encuentra el Dashboard con las métricas de los KPI propuestos.|[7_Dashboard](7_Dashboard)              |
+|8_Public                 |                  |Esta carpeta contiene los archivos para el deployment.|[8_Public](8_Public)|
+|8_Public                 |static            |Información fija para fastapi, jinja2, uvicorn.       |       |
+|8_Public                 |templates         |Plantilla para fastapi, jinja2, uvicorn.              |       |
+
 -----
 
 
@@ -66,6 +81,7 @@ El mercado del turismo en Estados Unidos es dinámico y competitivo. Nuestro pro
 
 En este repositorio, encontrará detalles sobre nuestra metodología, análisis de datos, modelos de machine learning y visualizaciones que respaldan nuestras recomendaciones. Esperamos que este proyecto brinde claridad y valor a nuestros clientes, mejorando la toma de decisiones y las experiencias de sus usuarios en el mercado del turismo norteamericano.
 
+# <h1 align=center><img src="5_Sources/Images/pipeline_storytelling.gif" width="500px"/></h1>
 -----
 
 -----
@@ -82,48 +98,36 @@ Sin embargo, toda esta información no es de utilidad sin el procesamiento y man
 -----
 
 -----
-# <font color='#307A71'>**Objetivos y Alcance**<a name="objetivos"></a></font>
-
-## **_♦ Objetivo General_**
-
-Proporcionar al cliente un análisis detallado de la opinión de sus usuarios en distintas plataformas con el fin de planificar nuevas estrategias.
-
-## **_♦ Objetivos Específicos_**
-
-* Recopilar, depurar y disponibilizar la información en un Data Warehouse (proceso de ETL) de forma estática y dinámica.
-* Analizar el conjunto de datos cargados en el Data Warehouse y resumir sus principales características (proceso del EDA).
-* Entrenar y poner en producción un modelo de Machine Learning que permita predecir cuáles son los rubros del negocio que más crecerán o decaerán y dónde es conveniente emplazar nuevos locales del negocio.
-* Generar a través de Machine Learning un sistema de recomendación del negocio para los usuarios con el propósito de que estos puedan conocer nuevas temáticas basados en sus experiencias previas.
-
-## **_♦ Alcance_**
+# <font color='#307A71'>**Alcance**<a name="objetivos"></a></font>
 
 * Se seleccionarán otras plataformas de información, además de Yelp y Google Maps, que contengan información pertinente y permitan complementar el proceso de ETL y EDA.
 * Se usarán diversas herramientas tecnológicas, como Micfrosoft Fabric, para llevar a cabo el proceso de ETL y EDA.
-* Se facilitará un informe y dashboard al cliente con los procesos de ETL, EDA, predicción del comportamiento de los rubros y sistema de recomendación del negocio a través de una API o aplicación.
+* Se facilitará un dashboard y un sistema de recomendaciones del negocio a través de una API o aplicación.
 -----
 
 -----
-# <font color='#307A71'>**Key Performance Indicators - KPI's**<a name="kpi"></a></font>
+# <font color='#307A71'>**Objetivos y Key Performance Indicators - KPI's**<a name="kpi"></a></font>
 
- KPIs propuestos :
+## **_♦Objetivo No 1:_**
 
-+ <font color='##74A608'>**Índice de satisfacción del cliente :**</font> La opinión inmediata de los clientes tras finalizar la interacción con la empresa es una
-buena forma de conocer su percepción sobre el servicio brindado .
+Orientar nuestros esfuerzos hacia la mejora continua de la satisfacción del cliente en todos los aspectos de cada negocio; respaldada por la evaluación regular de indicadores clave como el Net Promoter Score (NPS) de los negocios por Estados y el Índice de Satisfacción del Cliente por negocio, con el propósito de fomentar relaciones a largo plazo y promover recomendaciones positivas.
 
-  Numero_de_clientes_satisfechos/total_de_clientes_encuestados*100  
-  Es decir, el nivel de puntuación de satisfacción del cliente de la empresa que utilizamos en este ejemplo es del 72,5%.
+<img src="5_Sources/Images/Objetivo_1.png" width="900px"/>
 
-+ <font color='##74A608'>**Net Promoter Score(NPS) Puntuación Neta del Promotor:**</font> evalúa el grado en que un cliente recomienda un cierto rubro (si un cliente aprecia un servicio lo suficiente como para recomendarla a otros)
-% Detractores - % Promotores = NPS
+## **_♦Objetivo No 2:_**
 
-+ <font color='##74A608'>**Índice de Penetración del Mercado (MPI):**</font> la penetración del mercado se centra en reforzar la relación e interacción de los clientes con el servicio a fin de aumentar el compromiso o engagement de las personas con el servicio prestado. % MPI = Clientes que accedieron al servicio / tamaño total de mercado para este servicio.
+Formular estrategias que promuevan un crecimiento sostenible y una expansión efectiva de la empresa, con un enfoque en el aumento constante de la Tasa de Retención de Clientes por Negocio y el comportamiento de la cantidad de clientes a los cuáles se les brinda el servicio, por negocio.
 
-+ <font color='##74A608'>**El Coste de Adquisición del Cliente o CAC:**</font> cuánto dinero has utilizado para capturar a nuevos clientes .CAC = (Marketing + Ventas) / Clientes Adquiridos.
+<img src="5_Sources/Images/Objetivo_2.png" width="900px"/>
 
-+ <font color='##74A608'>**Tasa de Retencion del Cliente:**</font> Se trata de un porcentaje que mide cuántos clientes conserva una empresa al final de un plazo determinado, después de comparar la adquisición de nuevos clientes contra el número de clientes que se perdieron.
+## **_♦Objetivo No 3:_**
+
+Optimizar la calidad y seguridad de servicios de nuestros clientes, garantizando información oportuna que les permita identificar cuando más del 30% de las observaciones sean negativas; y la calificación promedio de Salubridad y Seguridad de los Hoteles sea 3.5 o más.
+
+<img src="5_Sources/Images/Objetivo_3.png" width="900px"/>
 
 
-
+--------
 # <font color='#307A71'>**Stack Tecnológico - Pipeline**<a name="pipeline"></a></font>
 
 Son diversas herramientas las cuales nos van a ayudar a cumplir nuestros objetivos a nivel Técnico y Profesional, a continuación se detallan de la mejor forma:
@@ -131,8 +135,7 @@ Son diversas herramientas las cuales nos van a ayudar a cumplir nuestros objetiv
 <img src="5_Sources/Images/logo_fabric.png" width="25px"/><font color='##74A608'>**Microsoft Fabric:**</font> Es un todo en uno de data, se integran todas las herramientas para ETL, EDA y DA.
 Se propuso esta herramienta con el fin de adelantarnos a la tendencia, ya que se encuentra en fase Beta y pronto saldrá la versión Oficial, viniendo de Microsoft y la inversión que ha realizado los ultimos años en herramientas de data posicionandose en segundo lugar, tendremos la mejor experiencia en un entorno muy Profesional y nos ayudará para futuros proyectos en diferentes empresas.
 
-<img src="5_Sources/Images/logo_jupyter.png" width="30px"/><font color='##74A608'>**NoteBooks:**</font> Trabajaremos con esta herramienta conectada a Python, SQL y Apache Spark
-Data Factory: Esta herramienta nos ayuda a tener un flujo de datos entre areas y automatización de tareas, tambien es muy importante para la ingesta de datos en el Data WareHouse.
+<img src="5_Sources/Images/python.png" width="30px"/><font color='##74A608'>**Phyton:**</font> Python es un lenguaje de programación versátil ampliamente utilizado en ciencia de datos. Con bibliotecas como Pandas y NumPy, permite el análisis y manipulación de datos. Su flexibilidad lo hace ideal para automatizar tareas, trabajar con SQL y conectarse a herramientas como Apache Spark Data Factory en este proyecto.
 
 <img src="5_Sources/Images/logo_spark.jpeg" width="30px"/><font color='##74A608'>**Apache Spark:**</font> Hadoop y Spark nos ayuda para el procesamiento de grandes cantidades de datos en forma de nodos, paralelizando el trabajo y siendo más eficiente de acuerdo su configuración y el tipo de archivo que se use, lo podremos gestionar con Python o con SQL.
 
