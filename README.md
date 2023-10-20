@@ -259,4 +259,28 @@ Por otra parte, para el sistema de recomendación de hoteles se hizo uso del mé
 
 <img src="5_Sources/Images/ML_recomendaciones.JPG" width="900px"/>
 
--------------------
+-----------
+-----------
+# <font color='#307A71'>**Implementación Sitio Web - Deployment**<a name="pipeline"></a></font>
+
+El proceso de deploy implica para este proyecto implicó tomar el código fuente y los recursos necesarios que han sido desarrollados y probados en un entorno de desarrollo o pruebas y ponerlos en funcionamiento en un entorno real en línea.
+
+Tareas Desarrolladas:
+
+  - Preparación de servidores: Configurar los servidores y recursos necesarios en un entorno de producción.
+
+  - Carga de código: Copiar los archivos y código fuente al servidor o entorno en producción.
+
+  - Configuración: Ajustar la configuración del software para que funcione en el entorno de producción.
+
+  - Pruebas de último minuto: Realizar pruebas finales para asegurarse de que todo funcione correctamente en el entorno de producción.
+
+  - Publicación: Poner la aplicación o sistema en línea y accesible para los usuarios finales.
+
+  - Monitoreo y mantenimiento: Supervisar el funcionamiento del software en producción y llevar a cabo tareas de mantenimiento continuo.
+
+Para la fase de publicación, el modelo se incluyó en la página web de Tipster.
+
+En el siguiente enlace se puede acceder a ella: [Tipster](https://tipsterhome.cistelsa.com/)
+
+<img src="5_Sources/Images/pagina_web.JPG" width="900px"/>
