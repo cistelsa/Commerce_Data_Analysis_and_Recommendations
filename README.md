@@ -19,10 +19,11 @@
 - [Entendimiento de la Situación Actual del Sector](#entendimiento-de-la-situación-actual-del-sector)
 - [Alcance](#alcance)
 - [Objetivos y Key Performance Indicators - KPI's](#objetivos-y-key-performance-indicators---kpis)
-- [Stack Tecnologico - Pipeline](#stack-tecnológico---pipeline)
-- [Metodología de Trabajo](#stack-tecnológico---pipeline)
-- [Datos](#datos)
-- [Modelo de Recomendación](#modelo-de-recomendacion)
+- [Stack Tecnologico](#stack-tecnológico)
+- [Desarrollo del Proyecto](#desarrollo-del-proyecto)
+    - [Metodología de Trabajo](#stack-tecnológico---pipeline)
+    - [Datos](#datos)
+    - [Modelo de Recomendación](#modelo-de-recomendacion)
 -----
 
 
@@ -31,7 +32,7 @@
 
 En el repositorio se encuentran los siguientes archivos:
 
-| **`Carpeta Principal`** | **`Subcarpeta`** | **`Descripción`** | **`Link`** |
+|   **Carpeta Principal** |   **Subcarpeta** |   **Descripción** |   **Link** |
 |-------------------------|------------------|-------------------|------------|
 |1_ETL                    |                  |Esta carpeta contiene los primeros archivos de ETL realizados al inicio del proyecto y los ETL de Normalización de Tablas producto de la automatización en Microsoft Fabric. |[1_ETL](1_ETL)    |
 |1_ETL                    |APIs              |Subcarpeta con la API utilizada para la extracción de información HotelBeds.                |                  |
@@ -63,7 +64,7 @@ En el repositorio se encuentran los siguientes archivos:
 
 |Nombre               | Rol                     | Correo                     | GitHub                                          | Linkedin|
 |---------------------|-------------------------|----------------------------|-------------------------------------------------|---------|
-|Leydy Lucena Peñaloza Rojas |Technical Project Managet, Data Engineer, Data Scientist |leydy.penaloza@gmail.com    |[leydypenaloza](https://github.com/leydypenaloza)    |[leydy-penaloza](www.linkedin.com/in/leydy-penaloza)|
+|Leydy Lucena Peñaloza Rojas |Technical Project Managet, Data Engineer, Data Scientist |leydy.penaloza@gmail.com    |[leydypenaloza](https://github.com/leydypenaloza)    |[leydy-penaloza](https://www.linkedin.com/in/leydy-penaloza/#:~:text=www.linkedin.com/in/leydy%2Dpenaloza)|
 |Edisson Camilo Ortiz López  |Data Analyst, Data Engineer, Visual Designer |eortiz@cistelsa.com   |[cistelsa](https://github.com/cistelsa)            |[camilo-ortiz-cistelsa](https://www.linkedin.com/in/camilo-ortiz-cistelsa)|
 |Aldemar Bohorquez Rodriguez |Data Engineer, Data Scientist, Machine Learning Engineer|abr942010@gmail.com   |[aldemarbr94](https://github.com/aldemarbr94)            |[aldemar-bohorquez-rodriguez](https://www.linkedin.com/in/aldemar-bohorquez-rodriguez/)|
 |Mayren Gabriela Silva Basto |Data Analyst, Data Engineer, Machine Learning Engineer  |mayrensilva95@gmail.com     |[MayrenS95](https://github.com/MayrenS95)        |[mayren-gabriela-silva-basto](https://www.linkedin.com/in/mayren-gabriela-silva-basto-67b645181/)|
@@ -79,7 +80,7 @@ Como consultores de datos, centrados en el análisis del mercado del turismo est
 
 El mercado del turismo en Estados Unidos es dinámico y competitivo. Nuestro proyecto aborda la necesidad de comprender mejor este mercado y aprovechar sus oportunidades; con este objetivo en mente, hemos desarrollado un conjunto de herramientas y análisis que ayudarán a nuestros clientes a optimizar sus estrategias.
 
-En este repositorio, encontrará detalles sobre nuestra metodología, análisis de datos, modelos de machine learning y visualizaciones que respaldan nuestras recomendaciones. Esperamos que este proyecto brinde claridad y valor a nuestros clientes, mejorando la toma de decisiones y las experiencias de sus usuarios en el mercado del turismo norteamericano.
+En este repositorio, encontrará detalles sobre nuestra metodología, análisis de datos, modelos de Machine Learning y visualizaciones que respaldan nuestras recomendaciones. Esperamos que este proyecto brinde claridad y valor a nuestros clientes, mejorando la toma de decisiones y las experiencias de sus usuarios en el mercado del turismo norteamericano.
 
 # <h1 align=center><img src="5_Sources/Images/pipeline_storytelling.gif" width="500px"/></h1>
 -----
@@ -96,17 +97,37 @@ Por tanto, existen plataformas en la web que permiten recopilar esta informació
 Sin embargo, toda esta información no es de utilidad sin el procesamiento y manejo adecuado, por ello, gracias al avance de la ciencia enfocada en el análisis de datos, se pueden usar herramientas que permiten identificar el estado actual, tendencias, pronósticos y supuestos en diversos escenarios, para finalmente tomar las decisiones pertinentes que permitan aumentar la satisfacción del cliente, posicionar la marca y utilidad de la organización.
 
 -----
+-----
+# <font color='#307A71'>**Servicios**<a name="objetivos"></a></font>
 
+Nuestra Aplicación ofrece a los clientes información precisa respecto a:
+
+1. **Outsourcig Logístico:** identificamos áreas de mejora a partir de opiniones y calificaciones negativas, impulsando una experiencia de hospedaje más satisfactoria.
+
+2. **Recomendaciones para segmentación de Anuncios en Google y Redes Sociales:** Utilizamos análisis de datos y modelos de machine learning para recomendar estrategias de segmentación. Identificamos empresas similares a través de recomendaciones de usuarios y realizamos un análisis detallado. Evaluamos puntuaciones de HotelBeds, rankings de diversas plataformas y extraemos información relevante sobre la competencia. Esta información nos permite mejorar el posicionamiento y la estrategia a desarrollar en anuncios de Google y redes sociales.
+
+3.  **Recomendaciones de ubicación para nuevos Hoteles:** Utilizamos análisis de datos y modelos de machine learning para determinar las ubicaciones ideales para nuevos hoteles en su cadena. Consideramos una variedad de variables, incluyendo la densidad de población, el turismo, el flujo de viajeros, eventos locales y los precios de la propiedad raíz. Esto nos permite maximizar el potencial de éxito en el mercado para sus nuevos hoteles. <font color='#307A71'>**_Próximamente_**<a name="objetivos"></a></font>
+
+## **_♦ Propuesta de valor:_**
+
+Lo que hace que nuestros servicios sean valiosos para nuestros clientes:
+
+<img src="5_Sources/Images/propuesta_de_valor.JPG" width="800px"/>
+
+-----
 -----
 # <font color='#307A71'>**Alcance**<a name="objetivos"></a></font>
 
 * Se seleccionarán otras plataformas de información, además de Yelp y Google Maps, que contengan información pertinente y permitan complementar el proceso de ETL y EDA.
 * Se usarán diversas herramientas tecnológicas, como Micfrosoft Fabric, para llevar a cabo el proceso de ETL y EDA.
 * Se facilitará un dashboard y un sistema de recomendaciones del negocio a través de una API o aplicación.
+* Estos servicios están disponibles solo para hoteles con una antiguedad mínima de creación de un año, ya que si son cadenas de Hoteles nuevas no tenemos un histórico de data para ofrecer el servicio.
 -----
 
 -----
 # <font color='#307A71'>**Objetivos y Key Performance Indicators - KPI's**<a name="kpi"></a></font>
+
+La documentación detallada de los KPI la encuentra en este enlace: [KPI](6_Documentation/KPI/Documentacion_KPI.ipynb)
 
 ## **_♦Objetivo No 1:_**
 
@@ -128,7 +149,12 @@ Optimizar la calidad y seguridad de servicios de nuestros clientes, garantizando
 
 
 --------
-# <font color='#307A71'>**Stack Tecnológico - Pipeline**<a name="pipeline"></a></font>
+
+--------
+# <h1 align=center> **DESARROLLO DEL PROYECTO**</h1>
+--------
+--------
+# <font color='#307A71'>**Stack Tecnológico**<a name="pipeline"></a></font>
 
 Son diversas herramientas las cuales nos van a ayudar a cumplir nuestros objetivos a nivel Técnico y Profesional, a continuación se detallan de la mejor forma:
 
@@ -149,25 +175,50 @@ Se propuso esta herramienta con el fin de adelantarnos a la tendencia, ya que se
 
 <img src="5_Sources/Images/logo_azure.png" width="30px"/><font color='##74A608'>**Microsoft Azure:**</font> Usaremos la nube de Microsoft para apoyarnos respecto a Bases de datos de SQL Server de ser necesarias, también para realizar el deploy de la aplicación para nuestros clientes a través de Fast API, usando Docker.
 
+----------
+
+----------
+# <font color='#307A71'>**ETL (Extract, Transform, Load)**<a name="pipeline"></a></font>
+
+En la fase de Extracción, Transformación y Carga (ETL), recopilamos y preparamos los datos relevantes para su análisis. Este proceso implica la obtención de información de diversas fuentes, la limpieza y transformación de datos para garantizar su calidad y consistencia, y finalmente la carga de los datos en nuestro entorno de análisis. A través de esta etapa, garantizamos que los datos estén listos para ser utilizados en nuestro proyecto de mejora de la experiencia de hospedaje y en la estrategia de segmentación publicitaria.
+
+La documentación detallada de los Notebook que contienen los ETL tanto de la extracción inicial como de la automatización la encuentra en este enlace: [ETL](1_ETL)
+
+----------
+----------
+
+# <font color='#307A71'>**EDA (Exploratory Data Analysis)**<a name="pipeline"></a></font>
+
+Durante la fase de Análisis Exploratorio de Datos (EDA), investigamos en profundidad los conjuntos de datos que hemos recopilado. Exploramos patrones, tendencias y relaciones dentro de los datos. Esto nos permite identificar insights clave y desentrañar información valiosa sobre las áreas de mejora en la experiencia de hospedaje. Además, el EDA nos ayuda a comprender mejor el panorama competitivo para perfeccionar nuestras estrategias publicitarias.
+
+A continuación presentamos algunas de las conclusiones obtenidas en la realización de esta fase, en algunos de los Datasets:
+
+  * EDA Dataset Business
+      - Se realizó limpieza de la data, así:
+        1. **Nulos:** Se convierten los valores no numéricos en NaN en las columnas _'postal_code'_ y _'address'_.
+        2. **Duplicados:** La Data no contenía valores duplicados
+        3. **Formato:** Se realizó cambio de formato a las variables que requerían cambio a _int_ o _float_.
+
+      * Al analizar la correlación entre las variables se identificó que no existe una relación lineal clara entre las variables, es decir, que los valores de una variable no están relacionados de manera predecible con los valores de la otra variable.
+
+      * De acuerdo con la ubicación en el mapa, los datos por Georeferenciación no se ubican solo en Estados Unidos, sino que algunas coordenadas se encuentran en Canada, dato que se debe tener en cuenta en los análisis que se realicen durante la ejecución del proyecto.
+
+      * Hay 2.709 categorías que incluyen la palabra **"Hotels"**, pero que no necesariamente los negocios son hoteles, por lo que el nuevo Dataset se envía a proceso de ETL para la extracción de los negocios que corresponden a **Hoteles** lo cual reducirá de manera significativa la base de datos original.
+
+
+-----
+----------
+# <font color='#307A71'>**Data Warehouse**<a name="pipeline"></a></font>
+
+https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17438992/fce4aa00-97e7-410e-b641-de1286028069
+
+
+ *Musica de fondo creada por inteligencia artificial - [https://soundful.com/](https://soundful.com/)*
+
 ## **_♦ Pipeline_**
 
-El diagrama de Pipeline tecnológico se encuentra a continuación:
+El diagrama de Pipeline tecnológico se presenta a continuación:
 
 <img src="5_Sources/Images/pipeline.gif" width="900px"/>
 
 [def]: #stack-tecnológico---pipeline
-
-
-Nuestra Aplicación ofrece a los clientes información precisa respecto a:
-
-1. **Recomendaciones de ubicación para nuevos Hoteles:** hacemos uso de análisis de datos y modelos de machine learning para identificar las ubicaciones óptimas para nuevos hoteles de su cadena, considerando variables como la densidad de población, el turismo, la afluencia de viajeros, eventos locales y los precios de la propiedad raíz, maximizando así su éxito en el mercado.
-
-2. **Recomendaciones para segmentación de Anuncios en Google y Redes Sociales:** Utilizamos análisis de datos y modelos de machine learning para recomendar estrategias de segmentación y palabras clave altamente efectivas en Google y redes sociales, considerando la demografía, el turismo, los viajeros y los eventos locales de ubicaciones específica, optimizando así su presencia en línea y aumentando la conversión.
-
-3. **Outsourcig Logístico:** identificamos áreas de mejora a partir de opiniones y calificaciones negativas, impulsando una experiencia de hospedaje más satisfactoria.
-
-Respecto a lo desarrollado definimos unos limites y lo que no podemos hacer, no podemos ofrecer el servicio al 100% del gremio ya que si son cadenas de Hoteles nuevas no tenemos un histórico de data para ofrecer el servicio.
-
-https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17438992/fce4aa00-97e7-410e-b641-de1286028069
-
- *Musica de fondo creada por inteligencia artificial - [https://soundful.com/](https://soundful.com/)*
