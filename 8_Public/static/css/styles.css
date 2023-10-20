@@ -267,10 +267,6 @@ label {
   margin-left: 30px;
 }
 
-button#consultar-hoteles-button {
-  max-width: max-content;
-  margin-left: 40%;
-}
 
 @media screen and (max-width: 500px) {
 #flex-container {
@@ -286,10 +282,6 @@ button#consultar-hoteles-button {
   padding-top: 17px;
 }
 
-button#consultar-hoteles-button {
-  max-width: max-content;
-  margin-left: 40%;
-}
 
 .social-icons img {
   height: 25px;
