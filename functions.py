@@ -1,38 +1,36 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-from wordcloud import WordCloud
-
+import zipfile
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import linear_kernel
-
-import nltk
 from nltk.corpus import stopwords
+import nltk
+from wordcloud import WordCloud
+
 nltk.download('stopwords')
 
-import zipfile
+# Cargar datos desde archivos ZIP
+def load_hotels_data(zip_file_path):
+    with zipfile.ZipFile(zip_file_path, 'r') as zip_file:
+        zip_file_contents = zip_file.namelist()
+        csv_file_name = zip_file_contents[0]
+        with zip_file.open(csv_file_name) as csv_file:
+            return pd.read_csv(csv_file)
 
-# Ruta del archivo ZIP
-zip_file_path = '2_Datasets/beta/hotelbeds/df_hotels.zip'
+# Cargar datos de hoteles
+def load_hotel_data():
+    zip_file_path = '2_Datasets/beta/hotelbeds/df_hotels.zip'
+    return load_hotels_data(zip_file_path)
 
-# Abre el archivo ZIP
-with zipfile.ZipFile(zip_file_path, 'r') as zip_file:
-    # Lista los archivos en el ZIP (puede haber múltiples archivos, no necesariamente uno)
-    zip_file_contents = zip_file.namelist()
-    
-    # Supongamos que queremos leer el primer archivo CSV en el ZIP
-    csv_file_name = zip_file_contents[0]
-    
-    # Extrae el archivo CSV del ZIP
-    with zip_file.open(csv_file_name) as csv_file:
-        # Lee el archivo CSV con Pandas
-        df_hotels_filter = pd.read_csv(csv_file)
+# Cargar datos de recomendaciones
+def load_recommendations_data():
+    zip_file_path = '2_Datasets/beta/hotelbeds/df_hotels_.zip'
+    return load_hotels_data(zip_file_path)
+
+df_hotels_filter = load_hotel_data()
 
 # Función para crear una lista de hoteles a través de ajax
 def hotels_list_to_html():
-
     df_hotel = pd.read_csv("2_Datasets/launch/hotels_name_to_frontend.csv")
     df_hotel = df_hotel.dropna(subset=['name'])
     df_state = df_hotels_filter.drop_duplicates(subset=['state_name'])
@@ -42,6 +40,25 @@ def hotels_list_to_html():
     df_poi = df_hotels_filter.drop_duplicates(subset=['poi_name'])
     df_poi = df_poi.dropna(subset=['poi_name'])
     return df_hotel["name"].tolist(), df_state["state_name"].tolist(), df_city["city_name"].tolist(), df_poi["poi_name"].tolist()
+
+# Filtros para búsqueda de hoteles con más puntuación
+def filters(state:str = '0', city:str = '0', name_point:str = '0'):
+    try:
+        if state != '0':
+            filter_state = df_hotels_filter[df_hotels_filter['state_name'] == state].sort_values(ascending=False, by=['stars'])
+            if city != '0':
+                filter_state = filter_state[filter_state['city_name'] == city].sort_values(ascending=False, by=['stars'])
+                if name_point != '0':
+                    filter_state = filter_state[filter_state['poi_name'] == name_point].sort_values(ascending=False, by=['stars'])
+            return filter_state.iloc[:3,[11,12,1,15,2,4,5,8,9,13,14]].to_html(index=False, justify="center")
+        elif city != '0':
+            filter_state = df_hotels_filter[df_hotels_filter['city_name'] == city].sort_values(ascending=False, by=['stars'])
+            return filter_state.iloc[:3,[11,12,1,15,2,4,5,8,9,13,14]].to_html(index=False, justify="center")
+        elif name_point != '0':
+            filter_state = df_hotels_filter[df_hotels_filter['poi_name'] == name_point].sort_values(ascending=False, by=['stars'])
+            return filter_state.iloc[:3,[11,12,1,15,2,4,5,8,9,13,14]].to_html(index=False, justify="center")        
+    except:
+        return 'INGRESAR UNA BÚSQUEDA'
 
 #función para lista filtrada estados
 def list_filter_state(estado: str):
@@ -55,6 +72,7 @@ def list_filter_city(ciudad: str):
     return poi_x_city.tolist()
 
 
+# Función para el conteo de sentimientos
 def get_sentiments_count(title, preview_recommendations):
 
     # Cargar el DataFrame precalculado desde el archivo CSV
@@ -79,23 +97,11 @@ def get_sentiments_count(title, preview_recommendations):
     else:
         return ["Hotel no encontrado en la Base de Datos."]
     
-    
-def cargar_datos_y_generar_recomendaciones():
-    # Ruta del archivo ZIP
-    zip_file_path = '2_Datasets/beta/hotelbeds/df_hotels_.zip'
 
-    # Abre el archivo ZIP
-    with zipfile.ZipFile(zip_file_path, 'r') as zip_file:
-        # Lista los archivos en el ZIP (puede haber múltiples archivos, no necesariamente uno)
-        zip_file_contents = zip_file.namelist()
-        
-        # Supongamos que queremos leer el primer archivo CSV en el ZIP
-        csv_file_name = zip_file_contents[0]
-        
-        # Extrae el archivo CSV del ZIP
-        with zip_file.open(csv_file_name) as csv_file:
-            # Lee el archivo CSV con Pandas
-            df_hotels = pd.read_csv(csv_file)
+# Función para recomendar hoteles similares    
+def load_data_and_generate_recommendations():
+    
+    df_hotels = load_recommendations_data()
 
     # Instanciamos el CountVectorizer
     vectorizer = CountVectorizer()
@@ -135,28 +141,5 @@ def cargar_datos_y_generar_recomendaciones():
     return recommend
 
 # Cargar datos y generar la función de recomendación
-recommendation_function = cargar_datos_y_generar_recomendaciones()
+recommendation_function = load_data_and_generate_recommendations()
 
-def filters(state:str = '0', 
-            city:str = '0',
-            name_point:str = '0'):
-    
-
-    try:
-        
-        if state != '0':
-            filter_state = df_hotels_filter[df_hotels_filter['state_name'] == state].sort_values(ascending=False, by=['stars'])
-            if city != '0':
-                filter_state = filter_state[filter_state['city_name'] == city].sort_values(ascending=False, by=['stars'])
-                if name_point != '0':
-                    filter_state = filter_state[filter_state['poi_name'] == name_point].sort_values(ascending=False, by=['stars'])
-            return filter_state.iloc[:3,[11,12,1,15,2,4,5,8,9,13,14]].to_html(index=False, justify="center")
-        elif city != '0':
-            filter_state = df_hotels_filter[df_hotels_filter['city_name'] == city].sort_values(ascending=False, by=['stars'])
-            return filter_state.iloc[:3,[11,12,1,15,2,4,5,8,9,13,14]].to_html(index=False, justify="center")
-        elif name_point != '0':
-            filter_state = df_hotels_filter[df_hotels_filter['poi_name'] == name_point].sort_values(ascending=False, by=['stars'])
-            return filter_state.iloc[:3,[11,12,1,15,2,4,5,8,9,13,14]].to_html(index=False, justify="center")        
-
-    except:
-        return 'INGRESAR UNA BÚSQUEDA'

@@ -81,9 +81,9 @@
 
         </div>
         <div class="other-content">
-            <h2>BETA DASHBOARD</h2>
+            <h2>FULL DASHBOARD V2.3</h2>
             <br>
-            <iframe title="Report Section" width="100%" height="350" src="https://app.fabric.microsoft.com/reportEmbed?reportId=ea6d161b-6f75-48d9-b633-5df58615fc68&autoAuth=true&ctid=77f8c303-ef48-412f-bbb8-089de7b82c8a" frameborder="0" allowFullScreen="true"></iframe>
+            <iframe title="Dashboard_Tipster" width="100%" height="373.5" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiNjM1NjAyZDEtMmU2Mi00YjE0LTg2MWMtYjIwNjkzYjJmNzVkIiwidCI6Ijc3ZjhjMzAzLWVmNDgtNDEyZi1iYmI4LTA4OWRlN2I4MmM4YSIsImMiOjR9&embedImagePlaceholder=true&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
             <br>
             <h2>KEY ENABLER</h2>
             <img src="{{url_for('static', path='/img/banner_herramientas.png')}}" alt="Banner Herramientas" class="herramientas">
@@ -103,191 +103,190 @@
         <script>
         $(document).ready(function () {
     
-        var recomendacionInput = $("#recomendacion-select");
-    
-    // Inicializar Select2 en el campo de texto
-    recomendacionInput.select2({
-        data: hotelesOptions,
-        minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
-        placeholder: "Selecciona un Hotel"
-    });
+            var recomendacionInput = $("#recomendacion-select");
 
-    // Manejar selección de hotel y clic en el botón
-    $("#consultar-recomendacion-button").click(function () {
-        var titulo = recomendacionInput.val();
-
-         
-            $.ajax({
-                type: "GET",
-                url: "/recomendacion_1",
-                data: { titulo: titulo },
-                success: function (response) {
-                    var resultadoContainer = $("#resultado-container");
-                    // Definir funciones para convertir valores nulos o vacíos en 0
-                    function convertirAEntero(valor) {
-                        return valor ? parseInt(valor) : 0;
-                    }
-                    // Formatear el array de recomendación como cadena JSON
-                    var NegativeFormatted = convertirAEntero(JSON.stringify(response.Negative));
-                    var PositiveFormatted = convertirAEntero(JSON.stringify(response.Positive));
-                    var VeryNegativeFormatted = convertirAEntero(JSON.stringify(response['Very Negative']));
-                    var VeryPositiveFormatted = convertirAEntero(JSON.stringify(response['Very Positive']));
-                    var GeneralSentiment = (parseInt(PositiveFormatted) + parseInt(VeryPositiveFormatted)) - (parseInt(NegativeFormatted) + parseInt(VeryNegativeFormatted))
-                    // Asigna etiquetas de texto en función del valor numérico
-                    var etiquetaSentimiento = '';
-                    if (GeneralSentiment <= -20) {
-                        etiquetaSentimiento = 'Muy Negativo';
-                    } else if (GeneralSentiment > -20 && GeneralSentiment < 0) {
-                        etiquetaSentimiento = 'Negativo';
-                    } else if (GeneralSentiment >= 1 && GeneralSentiment < 20) {
-                        etiquetaSentimiento = 'Positivo';
-                    } else {
-                        etiquetaSentimiento = 'Muy Positivo';
-                    }
-
-                resultadoContainer.html("Tu consulta es <strong>" + titulo + "</strong>. <br><br><strong>Sentimiento General:</strong> <br><br>" + etiquetaSentimiento + "<br><br><strong>Cantidad Sentimiento Positivo:</strong> <br><br>" + PositiveFormatted + "<br><br><strong>Cantidad Sentimiento Muy Positivo:</strong> <br><br>" + VeryPositiveFormatted + "<br><br><strong>Cantidad Sentimiento Negativo:</strong> <br><br>" + NegativeFormatted + "<br><br><strong>Cantidad Sentimiento Muy Negativo:</strong> <br><br>" + VeryNegativeFormatted);
-                }
-
+            // Inicializar Select2 en el campo de texto
+            recomendacionInput.select2({
+                data: hotelesOptions,
+                minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+                placeholder: "Selecciona un Hotel"
             });
-        });
 
-
-        var recomendacion_2Input = $("#recomendacion-2-select");
-    
-    // Inicializar Select2 en el campo de texto
-    recomendacion_2Input.select2({
-        data: hotelesOptions,
-        minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
-        placeholder: "Selecciona un Hotel"
-    });
-
-
-        // Manejar selección de película y clic en el botón
-    $("#consultar-recomendacion-2-button").click(function () {
-        var titulo_2 = recomendacion_2Input.val();
-
-         
-            $.ajax({
-                type: "GET",
-                url: "/recomendacion_2",
-                data: { titulo_2: titulo_2 },
-                success: function (response) {
-                    var resultadoContainer = $("#resultado-container");
-                    
-                resultadoContainer.html(response.recomendacion_2);
-                }
-
-            });
-        });
-
+            // Manejar selección de hotel y clic en el botón
+            $("#consultar-recomendacion-button").click(function () {
+                var titulo = recomendacionInput.val();
 
             
-    var estadoInput = $("#state-select");
+                $.ajax({
+                    type: "GET",
+                    url: "/recomendacion_1",
+                    data: { titulo: titulo },
+                    success: function (response) {
+                        var resultadoContainer = $("#resultado-container");
+                        // Definir funciones para convertir valores nulos o vacíos en 0
+                        function convertirAEntero(valor) {
+                            return valor ? parseInt(valor) : 0;
+                        }
+                        // Formatear el array de recomendación como cadena JSON
+                        var NegativeFormatted = convertirAEntero(JSON.stringify(response.Negative));
+                        var PositiveFormatted = convertirAEntero(JSON.stringify(response.Positive));
+                        var VeryNegativeFormatted = convertirAEntero(JSON.stringify(response['Very Negative']));
+                        var VeryPositiveFormatted = convertirAEntero(JSON.stringify(response['Very Positive']));
+                        var GeneralSentiment = (parseInt(PositiveFormatted) + parseInt(VeryPositiveFormatted)) - (parseInt(NegativeFormatted) + parseInt(VeryNegativeFormatted))
+                        // Asigna etiquetas de texto en función del valor numérico
+                        var etiquetaSentimiento = '';
+                        if (GeneralSentiment <= -20) {
+                            etiquetaSentimiento = 'Muy Negativo';
+                        } else if (GeneralSentiment > -20 && GeneralSentiment < 0) {
+                            etiquetaSentimiento = 'Negativo';
+                        } else if (GeneralSentiment >= 1 && GeneralSentiment < 20) {
+                            etiquetaSentimiento = 'Positivo';
+                        } else {
+                            etiquetaSentimiento = 'Muy Positivo';
+                        }
 
-// Inicializar Select2 en el campo de texto
-estadoInput.select2({
-    data: estadoOptions,
-    minimumInputLength: 2,  // Comenzar a filtrar después de ingresar al menos 2 caracteres
-    placeholder: "Estado"
-});
+                    resultadoContainer.html("Tu consulta es <strong>" + titulo + "</strong>. <br><br><strong>Sentimiento General:</strong> <br><br>" + etiquetaSentimiento + "<br><br><strong>Cantidad Sentimiento Positivo:</strong> <br><br>" + PositiveFormatted + "<br><br><strong>Cantidad Sentimiento Muy Positivo:</strong> <br><br>" + VeryPositiveFormatted + "<br><br><strong>Cantidad Sentimiento Negativo:</strong> <br><br>" + NegativeFormatted + "<br><br><strong>Cantidad Sentimiento Muy Negativo:</strong> <br><br>" + VeryNegativeFormatted);
+                    }
+
+                });
+            });
+
+
+            var recomendacion_2Input = $("#recomendacion-2-select");
+    
+            // Inicializar Select2 en el campo de texto
+            recomendacion_2Input.select2({
+                data: hotelesOptions,
+                minimumInputLength: 3,  // Comenzar a filtrar después de ingresar al menos 3 caracteres
+                placeholder: "Selecciona un Hotel"
+            });
+
+
+                // Manejar selección de película y clic en el botón
+            $("#consultar-recomendacion-2-button").click(function () {
+                var titulo_2 = recomendacion_2Input.val();
+
+                $.ajax({
+                    type: "GET",
+                    url: "/recomendacion_2",
+                    data: { titulo_2: titulo_2 },
+                    success: function (response) {
+                        var resultadoContainer = $("#resultado-container");
+                        
+                    resultadoContainer.html(response.recomendacion_2);
+                    }
+
+                });
+            });
+
+
+                    
+            var estadoInput = $("#state-select");
+
+            // Inicializar Select2 en el campo de texto
+            estadoInput.select2({
+                data: estadoOptions,
+                minimumInputLength: 2,  // Comenzar a filtrar después de ingresar al menos 2 caracteres
+                placeholder: "Estado"
+            });
 
    
-    var ciudadInput = $("#city-select");
+            var ciudadInput = $("#city-select");
 
-// Inicializar Select2 en el campo de texto
-ciudadInput.select2({
-    data: ciudadOptions,
-    minimumInputLength: 2,  // Comenzar a filtrar después de ingresar al menos 2 caracteres
-    placeholder: "Ciudad"
-});
+            // Inicializar Select2 en el campo de texto
+            ciudadInput.select2({
+                data: ciudadOptions,
+                minimumInputLength: 2,  // Comenzar a filtrar después de ingresar al menos 2 caracteres
+                placeholder: "Ciudad"
+            });
 
     
-    var poiInput = $("#poi-select");
+            var poiInput = $("#poi-select");
 
-// Inicializar Select2 en el campo de texto
-poiInput.select2({
-    data: poiOptions,
-    minimumInputLength: 2,  // Comenzar a filtrar después de ingresar al menos 2 caracteres
-    placeholder: "Punto de Interes"
-});
+            // Inicializar Select2 en el campo de texto
+            poiInput.select2({
+                data: poiOptions,
+                minimumInputLength: 2,  // Comenzar a filtrar después de ingresar al menos 2 caracteres
+                placeholder: "Punto de Interes"
+            });
 
 
-estadoInput.change(function () {
-        var estadoSeleccionado = estadoInput.val();
-        if (estadoSeleccionado) {
-            // Realiza una solicitud para obtener ciudades en función del estado seleccionado
-            $.ajax({
-                type: "GET",
-                url: "/obtener_ciudades", // Debes definir una ruta adecuada en tu backend
-                data: { estado: estadoSeleccionado },
-                success: function (response) {
-                    ciudadInput.empty(); // Borra las opciones actuales
-                    // Agrega una opción en blanco al inicio
-                    ciudadInput.select2({
-                minimumInputLength: 0,
-                placeholder: "Ciudad"
-                })
-                ciudadInput.append(new Option(" ", ""));
-                // Agrega las ciudades obtenidas
-                for (var i = 0; i < response.ciudades.length; i++) {
-                    ciudadInput.append(new Option(response.ciudades[i], response.ciudades[i]));
-                }
-                
-                    poiInput.empty(); // Borra las opciones actuales
-                    poiInput.select2({
-                        minimumInputLength: 0, 
-                        placeholder: "Punto de Interes"
+            estadoInput.change(function () {
+                var estadoSeleccionado = estadoInput.val();
+                if (estadoSeleccionado) {
+                    // Realiza una solicitud para obtener ciudades en función del estado seleccionado
+                    $.ajax({
+                        type: "GET",
+                        url: "/obtener_ciudades", // Debes definir una ruta adecuada en tu backend
+                        data: { estado: estadoSeleccionado },
+                        success: function (response) {
+                            ciudadInput.empty(); // Borra las opciones actuales
+                            // Agrega una opción en blanco al inicio
+                            ciudadInput.select2({
+                        minimumInputLength: 0,
+                        placeholder: "Ciudad"
+                        })
+                        ciudadInput.append(new Option(" ", ""));
+                        // Agrega las ciudades obtenidas
+                        for (var i = 0; i < response.ciudades.length; i++) {
+                            ciudadInput.append(new Option(response.ciudades[i], response.ciudades[i]));
+                        }
+                        
+                            poiInput.empty(); // Borra las opciones actuales
+                            poiInput.select2({
+                                minimumInputLength: 0, 
+                                placeholder: "Punto de Interes"
+                            });
+                            poiInput.append(new Option(" ", ""));
+                        // Agrega las ciudades obtenidas
+                        for (var i = 0; i < response.poi.length; i++) {
+                            poiInput.append(new Option(response.poi[i], response.poi[i]));
+                        }
+                        }
                     });
-                    poiInput.append(new Option(" ", ""));
-                // Agrega las ciudades obtenidas
-                for (var i = 0; i < response.poi.length; i++) {
-                    poiInput.append(new Option(response.poi[i], response.poi[i]));
-                }
                 }
             });
-        }
-    });
 
-    ciudadInput.change(function () {
-        var ciudadSeleccionada = ciudadInput.val();
-        if (ciudadSeleccionada) {
-            // Realiza una solicitud para obtener puntos de interés en función de la ciudad seleccionada
-            $.ajax({
-                type: "GET",
-                url: "/obtener_poi", // Debes definir una ruta adecuada en tu backend
-                data: { ciudad: ciudadSeleccionada },
-                success: function (response) {
-                    poiInput.empty();
-                    poiInput.append(new Option("Punto de Interés", ""));
-                // Agrega las ciudades obtenidas
-                for (var i = 0; i < response.poi.length; i++) {
-                    poiInput.append(new Option(response.poi[i], response.poi[i]));
-                }
+            ciudadInput.change(function () {
+                var ciudadSeleccionada = ciudadInput.val();
+                if (ciudadSeleccionada) {
+                    // Realiza una solicitud para obtener puntos de interés en función de la ciudad seleccionada
+                    $.ajax({
+                        type: "GET",
+                        url: "/obtener_poi", // Debes definir una ruta adecuada en tu backend
+                        data: { ciudad: ciudadSeleccionada },
+                        success: function (response) {
+                            poiInput.empty();
+                            poiInput.append(new Option("Punto de Interés", ""));
+                        // Agrega las ciudades obtenidas
+                        for (var i = 0; i < response.poi.length; i++) {
+                            poiInput.append(new Option(response.poi[i], response.poi[i]));
+                        }
+                        }
+                    });
                 }
             });
-        }
-    });
 
 
-// Manejar selección de estados, ciudades, puntos de interes y clic en el botón
-$("#consultar-hoteles-button").click(function () {
-        var estado = estadoInput.val() || '0';
-        var ciudad = ciudadInput.val() || '0';
-        var poi = poiInput.val() || '0';
+            // Manejar selección de estados, ciudades, puntos de interes y clic en el botón
+            $("#consultar-hoteles-button").click(function () {
+                var estado = estadoInput.val() || '0';
+                var ciudad = ciudadInput.val() || '0';
+                var poi = poiInput.val() || '0';
 
-         
-            $.ajax({
-                type: "GET",
-                url: "/busca_hotel",
-                data: { estado: estado, ciudad: ciudad, poi: poi },
-                success: function (response) {
-                    var resultadoContainer = $("#resultado-container");
                     
-                resultadoContainer.html(response.busca_hotel);
-                }
+                $.ajax({
+                    type: "GET",
+                    url: "/busca_hotel",
+                    data: { estado: estado, ciudad: ciudad, poi: poi },
+                    success: function (response) {
+                        var resultadoContainer = $("#resultado-container");
+                        
+                    resultadoContainer.html(response.busca_hotel);
+                    }
 
+                });
             });
-        });
 
         });
     </script>
