@@ -26,9 +26,8 @@
     - [Automatización del Data Warehouse en Microsoft Fabric](#automatización-del-data-warehouse-en-microsoft-fabric)
       - [Pipeline](#♦-pipeline)
       - [Esquema de la Base de Datos](#♦-esquema-de-la-base-de-datos)
-    - [Metodología de Trabajo](#stack-tecnológico---pipeline)
-    - [Datos](#datos)
-    - [Modelo de Recomendación](#modelo-de-recomendacion)
+    - [Modelo de Recomendación](#modelos-de-machine-learning)
+    - [Implementación Sitio Web - Deployment](#implementacic3b3n-sitio-web---deployment-1)
 -----
 
 
@@ -108,7 +107,7 @@ Sin embargo, toda esta información no es de utilidad sin el procesamiento y man
 
 Nuestra Aplicación ofrece a los clientes información precisa respecto a:
 
-1. **Outsourcig Logístico:** identificamos áreas de mejora a partir de opiniones y calificaciones negativas, impulsando una experiencia de hospedaje más satisfactoria.
+1. **Outsourcig Logístico:** Optimizamos la experiencia de hospedaje a través del Outsourcing Logístico. Identificamos áreas de mejora utilizando opiniones y calificaciones negativas, lo que nos permite impulsar una estancia más satisfactoria para sus huéspedes. Nuestro enfoque en la mejora continua garantiza que su negocio de hospitalidad ofrezca siempre un servicio excepcional y atraiga a más clientes satisfechos.
 
 2. **Recomendaciones para segmentación de Anuncios en Google y Redes Sociales:** Utilizamos análisis de datos y modelos de machine learning para recomendar estrategias de segmentación. Identificamos empresas similares a través de recomendaciones de usuarios y realizamos un análisis detallado. Evaluamos puntuaciones de HotelBeds, rankings de diversas plataformas y extraemos información relevante sobre la competencia. Esta información nos permite mejorar el posicionamiento y la estrategia a desarrollar en anuncios de Google y redes sociales.
 
@@ -281,7 +280,7 @@ Tareas Desarrolladas:
 
 Para la fase de publicación, el modelo se incluyó en la página web de Tipster.
 
-En el siguiente enlace se puede acceder a ella: [Tipster](https://tipsterhome.cistelsa.com/)
+En el siguiente enlace se puede acceder a la página web: [Tipster](https://tipsterhome.cistelsa.com/)
 
 <img src="5_Sources/Images/pagina_web.JPG" width="900px"/>
 
@@ -289,3 +288,4 @@ En el siguiente enlace se puede acceder a ella: [Tipster](https://tipsterhome.ci
 
 https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/122321719/88270d04-fe4a-4cef-8e53-7132b0828c17
 
+# <font color='#307A71'>**Implementación Sitio Web - Deployment**<a name="pipeline"></a></font>
