@@ -19,8 +19,13 @@
 - [Entendimiento de la Situación Actual del Sector](#entendimiento-de-la-situación-actual-del-sector)
 - [Alcance](#alcance)
 - [Objetivos y Key Performance Indicators - KPI's](#objetivos-y-key-performance-indicators---kpis)
-- [Stack Tecnologico](#stack-tecnológico)
 - [Desarrollo del Proyecto](#desarrollo-del-proyecto)
+    - [Stack Tecnologico](#stack-tecnológico)
+    - [ETL (Extract, Transform, Load)](#etl-extract-transform-load)
+    - [EDA (Exploratory Data Analysis)](#eda-exploratory-data-analysis)
+    - [Automatización del Data Warehouse en Microsoft Fabric](#automatización-del-data-warehouse-en-microsoft-fabric)
+      - [Pipeline](#♦-pipeline)
+      - [Esquema de la Base de Datos](#♦-esquema-de-la-base-de-datos)
     - [Metodología de Trabajo](#stack-tecnológico---pipeline)
     - [Datos](#datos)
     - [Modelo de Recomendación](#modelo-de-recomendacion)
@@ -47,6 +52,7 @@ En el repositorio se encuentran los siguientes archivos:
 |6_Documentation          |                  |Esta carpeta principal contiene información sobre material de apoyo o complementario necesario para el desarrollo del proyecto.|[6_Documentation](6_Documentation)            |
 |6_Documentation          |Dictionaries      |Contiene los diccionarios de los Modelos de Entidad Relación de las Bases de Datos.|                   |
 |6_Documentation          |KPI               |Contiene información sobre los KPI propuestos para el proyecto.|       |
+|6_Documentation          |MER               |Contiene los Modelos de Entidad Relación elaborados para las bases de datos, Yelp, Google Mps, HotelBets y el Data Warehouse.|       |
 |6_Documentation          |Presentations_Sprint|Contiene las presentaciones realizadas por cada sprint de avance entregado.|  |
 |7_Dashboard              |                  |En esta carpeta se encuentra el Dashboard con las métricas de los KPI propuestos.|[7_Dashboard](7_Dashboard)              |
 |8_Public                 |                  |Esta carpeta contiene los archivos para el deployment.|[8_Public](8_Public)|
@@ -204,11 +210,23 @@ A continuación presentamos algunas de las conclusiones obtenidas en la realizac
       * De acuerdo con la ubicación en el mapa, los datos por Georeferenciación no se ubican solo en Estados Unidos, sino que algunas coordenadas se encuentran en Canada, dato que se debe tener en cuenta en los análisis que se realicen durante la ejecución del proyecto.
 
       * Hay 2.709 categorías que incluyen la palabra **"Hotels"**, pero que no necesariamente los negocios son hoteles, por lo que el nuevo Dataset se envía a proceso de ETL para la extracción de los negocios que corresponden a **Hoteles** lo cual reducirá de manera significativa la base de datos original.
+  
+  * EDA Datasets Google Maps
+      - Se destaca que el dataframe cuenta ahora con 17 columnas, de las cuales 'text_user', 'description', 'MISC' y 'relative_results' tienen campos vacíos, sin embargo permanecen en el dataset ya que se considera que su información será de utilidad para análisis posteriores.
 
+      - Las variables no estan correlacionadas en un rango significativo pues el valor más alto de correlación es de 0.45 que se da entre 'rating_user' y 'avg_rating'.
 
------
+      - La mayor cantidad de reseñas de los usuarios es en el estado de Colorado con un total de 258, seguido de Nevada con 218 y Massachusetts con 205; por otra parte los estados que tienen una menor cantidad son North Carolina y Washington con 8 reseñas en total.
+
+      - La mayor cantidad de hoteles se encuentra en el estado de Texas con un total de 87, seguido de California con 83, New York y Florida con 75; por otra parte los estados que tienen una menor cantidad son Delaware y Distric_of_Columbia con 1 hotel en total.
+
+La documentación detallada de los Notebook que contienen los EDA la encuentra en este enlace: [EDA](3_EDA)
+
 ----------
-# <font color='#307A71'>**Data Warehouse**<a name="pipeline"></a></font>
+----------
+# <font color='#307A71'>**Automatización del Data Warehouse en Microsoft Fabric**<a name="pipeline"></a></font>
+
+La automatización del Data Warehouse es un paso crítico en nuestro proyecto. Implementamos flujos de trabajo automatizados y programación para garantizar que los datos se actualicen de manera regular y precisa. Esto permite que nuestras recomendaciones estén siempre respaldadas por datos actualizados y relevantes. Nuestra automatización se enfoca en mantener la integridad de los datos y facilitar un acceso rápido a la información necesaria para impulsar su estrategia de posicionamiento y publicidad en Google y Redes Sociales.
 
 https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17438992/fce4aa00-97e7-410e-b641-de1286028069
 
@@ -217,8 +235,28 @@ https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17
 
 ## **_♦ Pipeline_**
 
-El diagrama de Pipeline tecnológico se presenta a continuación:
+El diagrama de Pipeline Tecnológico que representa la arquitectura de nuestro proyecto se presenta a continuación:
 
 <img src="5_Sources/Images/pipeline.gif" width="900px"/>
 
 [def]: #stack-tecnológico---pipeline
+
+## **_♦ Esquema de la Base de Datos_**
+
+El Data Warehouse tiene un esquema de copo de nieve donde se usa la tabla de hechos **hotels** como centro, las demás tablas proveen mas informacion al analista al hacer **_queries_**, pero solo si le es necesaria. Así, la base de datos es de la siguiente forma:
+
+<img src="5_Sources/Images/ERD_datawarehouse.png" width="900px"/>
+
+Todos los diagramas de las bases de datos se encuentran en un solo Notebook el cual se encuentra en este enlace: [MER](6_Documentation/MER/entidad_relacion.ipynb)
+
+-----------
+-----------
+# <font color='#307A71'>**Modelos de Machine Learning**<a name="pipeline"></a></font>
+
+Para el Machine Learning se usaron las librerías NLTK (Natural Language Toolkit) y sklearn. La primera es la de referencia en Python para realizar procesado del lenguaje natural (PLN). Ella incluye todas las herramientas necesarias para trabajar con PLN, entre las que se incluyen tokenización, lematización, etiquetado gramatical, análisis sintáctico y análisis de sentimientos (positivo, negativo o neutro). En nuestro caso se implementó en el análisis de sentimientos para determinar la polaridad emocional de las opiniones de las personas acerca de los hoteles.
+
+Por otra parte, para el sistema de recomendación de hoteles se hizo uso del método 'TF-IDF' (Frecuencia de Término – Frecuencia Inversa de Documento) de la biblioteca sklearn, la cual también es referencia en cuanto al aprendizaje automático en Python. El método usado es un algoritmo muy común para transformar el texto en una representación significativa de números, es decir, calcula la frecuencia con la que una palabra dada aparece dentro de un documento y le asigna una puntuación. Así que mediante 'TfidfVectorizer' se tokeniza dichas palabras, luego este aprende el vocabulario (palabras) y las ponderaciones inversas de frecuencia, generadas con 'TfidfTransformer', lo que reduce la escala de las palabras que aparecen mucho. En nuestro caso se usó las opiniones de las personas para dar la recomendación de hoteles (es una apliacación del filtrado colaborativo).
+
+<img src="5_Sources/Images/ML_recomendaciones.JPG" width="900px"/>
+
+-------------------
