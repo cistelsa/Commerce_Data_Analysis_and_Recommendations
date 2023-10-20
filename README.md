@@ -285,4 +285,7 @@ En el siguiente enlace se puede acceder a ella: [Tipster](https://tipsterhome.ci
 
 <img src="5_Sources/Images/pagina_web.JPG" width="900px"/>
 
-https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/blob/main/5_Sources/Videos/Deploy_Tipster.mp4
+
+
+https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/122321719/88270d04-fe4a-4cef-8e53-7132b0828c17
+
