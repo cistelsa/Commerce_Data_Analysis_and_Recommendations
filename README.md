@@ -284,3 +284,5 @@ Para la fase de publicación, el modelo se incluyó en la página web de Tipster
 En el siguiente enlace se puede acceder a ella: [Tipster](https://tipsterhome.cistelsa.com/)
 
 <img src="5_Sources/Images/pagina_web.JPG" width="900px"/>
+
+https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/blob/main/5_Sources/Videos/Deploy_Tipster.mp4
