@@ -303,4 +303,4 @@ Además de los KPI relacionados con la satisfacción del cliente, el dashboard t
 
 <img src="5_Sources/Images/dashboard.JPG" width="900px"/>
 
-El dashboar completo e interactivo puede ser consultado en este repositorio en el enlace [7_Dashboard](7_Dashboard), en la aplicación [Power BI On Line](https://app.fabric.microsoft.com/view?r=eyJrIjoiNjM1NjAyZDEtMmU2Mi00YjE0LTg2MWMtYjIwNjkzYjJmNzVkIiwidCI6Ijc3ZjhjMzAzLWVmNDgtNDEyZi1iYmI4LTA4OWRlN2I4MmM4YSIsImMiOjR9&embedImagePlaceholder=true), o en la página web: [Tipster](https://tipsterhome.cistelsa.com/).
+El dashboard completo e interactivo puede ser consultado en este repositorio en el enlace [7_Dashboard](7_Dashboard), en la aplicación [Power BI On Line](https://app.fabric.microsoft.com/view?r=eyJrIjoiNjM1NjAyZDEtMmU2Mi00YjE0LTg2MWMtYjIwNjkzYjJmNzVkIiwidCI6Ijc3ZjhjMzAzLWVmNDgtNDEyZi1iYmI4LTA4OWRlN2I4MmM4YSIsImMiOjR9&embedImagePlaceholder=true), o en la página web: [Tipster](https://tipsterhome.cistelsa.com/).
