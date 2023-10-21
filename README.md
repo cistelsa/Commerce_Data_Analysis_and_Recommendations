@@ -27,7 +27,9 @@
       - [Pipeline](#♦-pipeline)
       - [Esquema de la Base de Datos](#♦-esquema-de-la-base-de-datos)
     - [Modelo de Recomendación](#modelos-de-machine-learning)
-    - [Implementación Sitio Web - Deployment][def2]
+    - [Implementación Sitio Web - Deployment](#implementación-sitio-web---deployment)
+    - [Dashboard en Power BI](#dashboard-en-power-bi)
+
 -----
 
 
@@ -103,7 +105,7 @@ Sin embargo, toda esta información no es de utilidad sin el procesamiento y man
 
 -----
 -----
-# <font color='#307A71'>**Servicios**<a name="objetivos"></a></font>
+# <font color='#307A71'>**Servicios**<a name="servicios"></a></font>
 
 Nuestra Aplicación ofrece a los clientes información precisa respecto a:
 
@@ -111,7 +113,7 @@ Nuestra Aplicación ofrece a los clientes información precisa respecto a:
 
 2. **Recomendaciones para segmentación de Anuncios en Google y Redes Sociales:** Utilizamos análisis de datos y modelos de machine learning para recomendar estrategias de segmentación. Identificamos empresas similares a través de recomendaciones de usuarios y realizamos un análisis detallado. Evaluamos puntuaciones de HotelBeds, rankings de diversas plataformas y extraemos información relevante sobre la competencia. Esta información nos permite mejorar el posicionamiento y la estrategia a desarrollar en anuncios de Google y redes sociales.
 
-3.  **Recomendaciones de ubicación para nuevos Hoteles:** Utilizamos análisis de datos y modelos de machine learning para determinar las ubicaciones ideales para nuevos hoteles en su cadena. Consideramos una variedad de variables, incluyendo la densidad de población, el turismo, el flujo de viajeros, eventos locales y los precios de la propiedad raíz. Esto nos permite maximizar el potencial de éxito en el mercado para sus nuevos hoteles. <font color='#307A71'>**_Próximamente_**<a name="objetivos"></a></font>
+3.  **Recomendaciones de ubicación para nuevos Hoteles:** Utilizamos análisis de datos y modelos de machine learning para determinar las ubicaciones ideales para nuevos hoteles en su cadena. Consideramos una variedad de variables, incluyendo la densidad de población, el turismo, el flujo de viajeros, eventos locales y los precios de la propiedad raíz. Esto nos permite maximizar el potencial de éxito en el mercado para sus nuevos hoteles. <font color='#307A71'>**_Próximamente_**</a></font>
 
 ## **_♦ Propuesta de valor:_**
 
@@ -121,7 +123,7 @@ Lo que hace que nuestros servicios sean valiosos para nuestros clientes:
 
 -----
 -----
-# <font color='#307A71'>**Alcance**<a name="objetivos"></a></font>
+# <font color='#307A71'>**Alcance**<a name="alcance"></a></font>
 
 * Se seleccionarán otras plataformas de información, además de Yelp y Google Maps, que contengan información pertinente y permitan complementar el proceso de ETL y EDA.
 * Se usarán diversas herramientas tecnológicas, como Micfrosoft Fabric, para llevar a cabo el proceso de ETL y EDA.
@@ -159,7 +161,7 @@ Optimizar la calidad y seguridad de servicios de nuestros clientes, garantizando
 # <h1 align=center> **DESARROLLO DEL PROYECTO**</h1>
 --------
 --------
-# <font color='#307A71'>**Stack Tecnológico**<a name="pipeline"></a></font>
+# <font color='#307A71'>**Stack Tecnológico**<a name="stack"></a></font>
 
 Son diversas herramientas las cuales nos van a ayudar a cumplir nuestros objetivos a nivel Técnico y Profesional, a continuación se detallan de la mejor forma:
 
@@ -183,7 +185,7 @@ Se propuso esta herramienta con el fin de adelantarnos a la tendencia, ya que se
 ----------
 
 ----------
-# <font color='#307A71'>**ETL (Extract, Transform, Load)**<a name="pipeline"></a></font>
+# <font color='#307A71'>**ETL (Extract, Transform, Load)**<a name="etl"></a></font>
 
 En la fase de Extracción, Transformación y Carga (ETL), recopilamos y preparamos los datos relevantes para su análisis. Este proceso implica la obtención de información de diversas fuentes, la limpieza y transformación de datos para garantizar su calidad y consistencia, y finalmente la carga de los datos en nuestro entorno de análisis. A través de esta etapa, garantizamos que los datos estén listos para ser utilizados en nuestro proyecto de mejora de la experiencia de hospedaje y en la estrategia de segmentación publicitaria.
 
@@ -192,7 +194,7 @@ La documentación detallada de los Notebook que contienen los ETL tanto de la ex
 ----------
 ----------
 
-# <font color='#307A71'>**EDA (Exploratory Data Analysis)**<a name="pipeline"></a></font>
+# <font color='#307A71'>**EDA (Exploratory Data Analysis)**<a name="eda"></a></font>
 
 Durante la fase de Análisis Exploratorio de Datos (EDA), investigamos en profundidad los conjuntos de datos que hemos recopilado. Exploramos patrones, tendencias y relaciones dentro de los datos. Esto nos permite identificar insights clave y desentrañar información valiosa sobre las áreas de mejora en la experiencia de hospedaje. Además, el EDA nos ayuda a comprender mejor el panorama competitivo para perfeccionar nuestras estrategias publicitarias.
 
@@ -223,7 +225,7 @@ La documentación detallada de los Notebook que contienen los EDA la encuentra e
 
 ----------
 ----------
-# <font color='#307A71'>**Automatización del Data Warehouse en Microsoft Fabric**<a name="pipeline"></a></font>
+# <font color='#307A71'>**Automatización del Data Warehouse en Microsoft Fabric**<a name="automatizacion"></a></font>
 
 La automatización del Data Warehouse es un paso crítico en nuestro proyecto. Implementamos flujos de trabajo automatizados y programación para garantizar que los datos se actualicen de manera regular y precisa. Esto permite que nuestras recomendaciones estén siempre respaldadas por datos actualizados y relevantes. Nuestra automatización se enfoca en mantener la integridad de los datos y facilitar un acceso rápido a la información necesaria para impulsar su estrategia de posicionamiento y publicidad en Google y Redes Sociales.
 
@@ -250,7 +252,7 @@ Todos los diagramas de las bases de datos se encuentran en un solo Notebook el c
 
 -----------
 -----------
-# <font color='#307A71'>**Modelos de Machine Learning**<a name="pipeline"></a></font>
+# <font color='#307A71'>**Modelos de Machine Learning**<a name="ml"></a></font>
 
 Para el Machine Learning se usaron las librerías NLTK (Natural Language Toolkit) y sklearn. La primera es la de referencia en Python para realizar procesado del lenguaje natural (PLN). Ella incluye todas las herramientas necesarias para trabajar con PLN, entre las que se incluyen tokenización, lematización, etiquetado gramatical, análisis sintáctico y análisis de sentimientos (positivo, negativo o neutro). En nuestro caso se implementó en el análisis de sentimientos para determinar la polaridad emocional de las opiniones de las personas acerca de los hoteles.
 
@@ -260,9 +262,9 @@ Por otra parte, para el sistema de recomendación de hoteles se hizo uso del mé
 
 -----------
 -----------
-# <font color='#307A71'>**Implementación Sitio Web - Deployment**<a name="pipeline"></a></font>
+# <font color='#307A71'>**Implementación Sitio Web - Deployment**<a name="deploy"></a></font>
 
-El proceso de deploy implica para este proyecto implicó tomar el código fuente y los recursos necesarios que han sido desarrollados y probados en un entorno de desarrollo o pruebas y ponerlos en funcionamiento en un entorno real en línea.
+El proceso de deploy para este proyecto implicó tomar el código fuente y los recursos necesarios que han sido desarrollados y probados en un entorno de desarrollo o pruebas y ponerlos en funcionamiento en un entorno real en línea.
 
 Tareas Desarrolladas:
 
@@ -288,4 +290,17 @@ En el siguiente enlace se puede acceder a la página web: [Tipster](https://tips
 
 https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/122321719/88270d04-fe4a-4cef-8e53-7132b0828c17
 
-# <font color='#307A71'>**Dashboard en Power BI**<a name="pipeline"></a></font>
+----------
+
+----------
+# <font color='#307A71'>**Dashboard en Power BI**<a name="dashboard"></a></font>
+
+El dashboard en Power BI es una herramienta esencial en nuestro proyecto, diseñada para proporcionar una visión completa del desempeño de los hoteles y negocios en términos de satisfacción del cliente, retención, registros, índice de sentimientos y niveles de salubridad y seguridad. Ofrece una vista instantánea de los indicadores clave de desempeño (KPI) que son cruciales para el éxito de nuestros clientes. En particular, estamos rastreando el Net Promoter Score (NPS), el Índice de Satisfacción del Cliente, la Tasa de Retención de Clientes, la cantidad de registros anuales, las calificaciones negativas y el nivel de salubridad y seguridad. Este dashboard proporciona a los administradores y responsables de toma de decisiones una herramienta central para evaluar el desempeño de cada negocio y estado.
+
+Nuestro dashboard se centra en KPI clave que son fundamentales para medir y mejorar la satisfacción del cliente y el éxito de nuestros clientes. El Net Promoter Score (NPS) nos permite identificar aquellos negocios que cumplen con el mínimo de calificación del 30% y evaluar el impacto de nuestras estrategias de mejora. El Índice de Satisfacción del Cliente nos permite calificar anualmente la satisfacción de los clientes, centrándonos en aquellos hoteles con calificaciones promedio de 4 o más como indicadores de satisfacción. La Tasa de Retención de Clientes se monitorea mensualmente, asegurando que la variación sea igual o superior al 0%. Estos KPI son esenciales para nuestra estrategia de mejora continua.
+
+Además de los KPI relacionados con la satisfacción del cliente, el dashboard también rastrea el nivel de salubridad y seguridad de los hoteles por estados, considerando únicamente aquellos con calificaciones iguales o superiores a 3.5 como referencia para un buen ranking. También estamos atentos a las observaciones clasificadas como negativas, asegurándonos de que no excedan el 30% de las calificaciones negativas. Este enfoque en la calidad y la seguridad garantiza que nuestros clientes disfruten de una experiencia de hospedaje de alta calidad y que nuestros hoteles cumplan con los estándares necesarios para el bienestar de los clientes.
+
+<img src="5_Sources/Images/dashboard.JPG" width="900px"/>
+
+El dashboar completo e interactivo puede ser consultado en este repositorio en el enlace [7_Dashboard](7_Dashboard), en la aplicación [Power BI On Line](https://app.fabric.microsoft.com/view?r=eyJrIjoiNjM1NjAyZDEtMmU2Mi00YjE0LTg2MWMtYjIwNjkzYjJmNzVkIiwidCI6Ijc3ZjhjMzAzLWVmNDgtNDEyZi1iYmI4LTA4OWRlN2I4MmM4YSIsImMiOjR9&embedImagePlaceholder=true), o en la página web: [Tipster](https://tipsterhome.cistelsa.com/).
