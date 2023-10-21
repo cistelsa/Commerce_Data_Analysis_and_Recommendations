@@ -27,7 +27,7 @@
       - [Pipeline](#♦-pipeline)
       - [Esquema de la Base de Datos](#♦-esquema-de-la-base-de-datos)
     - [Modelo de Recomendación](#modelos-de-machine-learning)
-    - [Implementación Sitio Web - Deployment](#implementacic3b3n-sitio-web---deployment-1)
+    - [Implementación Sitio Web - Deployment][def2]
 -----
 
 
@@ -236,7 +236,7 @@ https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17
 
 El diagrama de Pipeline Tecnológico que representa la arquitectura de nuestro proyecto se presenta a continuación:
 
-<img src="5_Sources/Images/pipeline.gif" width="900px"/>
+<img src="5_Sources/Images/stack_data_engineer_V3.jpg" width="900px"/>
 
 [def]: #stack-tecnológico---pipeline
 
@@ -288,4 +288,4 @@ En el siguiente enlace se puede acceder a la página web: [Tipster](https://tips
 
 https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/122321719/88270d04-fe4a-4cef-8e53-7132b0828c17
 
-# <font color='#307A71'>**Implementación Sitio Web - Deployment**<a name="pipeline"></a></font>
+# <font color='#307A71'>**Dashboard en Power BI**<a name="pipeline"></a></font>
