@@ -52,7 +52,7 @@ En el repositorio se encuentran los siguientes archivos:
 |3_EDA                    |                  |Carpeta que contiene los notebooks con los "EDA" - Análisis Exploratorio de Datos, de los datasets de la empresa.|[3_EDA](3_EDA)           |
 |4_Model_ML               |                  |Carpeta con los Notebooks de los Modelos de Machine Learning aplicados al proyecto.    |[4_Model_ML](4_Model_ML)                  |
 |5_Sources                |                  |Carpeta de recursos web.|[5_Sources](5_Sources)       |
-|5_Sources                |Images            |Subarpeta con las imágenes utilizadas en los archivos .md, .ipynb, web.|  |
+|5_Sources                |Images            |Subcarpeta con las imágenes utilizadas en los archivos .md, .ipynb, web.|  |
 |5_Sources                |Videos            |Subcarpeta con los videos utilizados en los archivos .md, .ipynb, web.|     |
 |6_Documentation          |                  |Esta carpeta principal contiene información sobre material de apoyo o complementario necesario para el desarrollo del proyecto.|[6_Documentation](6_Documentation)            |
 |6_Documentation          |Dictionaries      |Contiene los diccionarios de los Modelos de Entidad Relación de las Bases de Datos.|                   |
