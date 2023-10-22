@@ -1,7 +1,7 @@
 ![banner_tipster](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17438992/5972fc1a-725d-43b7-9d7b-6cd76f0ad165)
 
 
-# <h1 align=center> **COMMERCE DATA ALALYSIS AND RECOMMENDATIONS** <img src="5_Sources/Images/Icono_tipster_green.png" width="50px"/></h1>
+# <h1 align=center> **COMMERCE DATA ANALYSIS AND RECOMMENDATIONS** <img src="5_Sources/Images/Icono_tipster_green.png" width="50px"/></h1>
 
 ## Tipster ![marca-version](https://img.shields.io/badge/Versi%C3%B3n-1.0.2-bluegreen?style=for-the-badge&logo=googlehome)
 ![marca-licencia](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge&logo=apachespark)
@@ -30,6 +30,9 @@
     - [Implementación Sitio Web - Deployment](#implementación-sitio-web---deployment)
     - [Dashboard en Power BI](#dashboard-en-power-bi)
     - [Gestión del Proyecto - Metodología Scrum](#gestión-del-proyecto---metodología-scrum)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
+- [Agradecimientos](#agradecimientos)
 
 -----
 
@@ -308,22 +311,43 @@ Además de los KPI relacionados con la satisfacción del cliente, el dashboard t
 
 El dashboard completo e interactivo puede ser consultado en este repositorio en el enlace [7_Dashboard](7_Dashboard), en la aplicación [Power BI On Line](https://app.fabric.microsoft.com/view?r=eyJrIjoiNjM1NjAyZDEtMmU2Mi00YjE0LTg2MWMtYjIwNjkzYjJmNzVkIiwidCI6Ijc3ZjhjMzAzLWVmNDgtNDEyZi1iYmI4LTA4OWRlN2I4MmM4YSIsImMiOjR9&embedImagePlaceholder=true), o en la página web: [Tipster](https://tipsterhome.cistelsa.com/).
 
+----------
+----------
+
 # <font color='#307A71'>**Gestión del Proyecto - Metodología Scrum**<a name="dashboard"></a></font>
 
 En este proyecto, hemos implementado la metodología ágil Scrum como el enfoque central de gestión. Scrum ha sido fundamental para garantizar la eficiencia, la colaboración y la flexibilidad en todo el ciclo de vida del proyecto. Destacamos los siguientes aspectos clave relacionados con el uso de Scrum:
 
-- Planificación Iterativa: Utilizamos Scrum para descomponer el proyecto en iteraciones manejables, conocidas como sprints. Cada sprint tiene un conjunto claro de objetivos y tareas. Esto nos permite priorizar y enfocarnos en entregas parciales de valor de manera constante.
+<img src="5_Sources/Images/diagrama_scrum.png" width="900px"/>
 
-- Transparencia y Comunicación: Scrum fomenta la transparencia y la comunicación en todo el equipo. A través de herramientas como GitHub, hemos mantenido una lista de _user stories_ bien definidas y hemos establecido milestones que dividen el proyecto en fases claras. Esto facilita la comunicación de los avances y los obstáculos.
-
-- Flexibilidad y Adaptación: Scrum nos ha permitido ser flexibles y adaptables a medida que surgían cambios en los requisitos o se identificaban nuevas oportunidades. Las reuniones perioódicas de Scrum, como el **_Daily Standup_**, han sido fundamentales para evaluar el progreso y hacer ajustes en tiempo real.
-
-- Responsabilidad Individual: Cada miembro del equipo tiene asignadas tareas específicas y es responsable de su avance. La sección de "Mis Tareas" en GitHub ha sido crucial para que cada miembro del equipo conozca sus responsabilidades, las fechas de inicio y finalización, y el estado actual.
-
-- <img src="5_Sources/Images/icono_indicador_6.png" width="30px"/>Control de Progreso: La sección **_Estado_** en GitHub muestra claramente el estado de todas las actividades, divididas en **_"Por Hacer"_**, **_"En Progreso"_** y **_"Terminadas"_**, lo que facilita el seguimiento y el control del progreso del proyecto.
-
-- Gestión de Tiempo y Cronograma: Utilizamos un diagrama de Gantt en la sección de cronograma en GitHub para visualizar las fechas de inicio y finalización de cada actividad, lo que nos ayuda a mantener el proyecto en tiempo y forma.
 
 En resumen, Scrum ha sido esencial para mantener el proyecto en el camino correcto. Ha promovido la colaboración, la comunicación y la adaptabilidad en nuestro equipo, lo que nos ha permitido cumplir con los objetivos del proyecto de manera eficiente y efectiva. La metodología Scrum ha sido una parte integral de nuestro enfoque de gestión.
 
 El gestor de proyecto completo e interactivo puede ser consultado en este repositorio en el enlace [GitHub Project](https://github.com/users/cistelsa/projects/4)
+
+----------
+----------
+
+# <font color='#307A71'>**Contribución**<a name="dashboard"></a></font>
+
+Agradecemos las contribuciones a este proyecto. Si deseas contribuir, sigue estos pasos:
+
+1. Realiza un fork del repositorio.
+2. Crea una rama con una descripción significativa.
+3. Realiza tus cambios y documenta adecuadamente.
+4. Abre una solicitud de extracción (Pull Request).
+
+Esperamos con interés colaborar contigo.
+
+# <font color='#307A71'>**Licencia**<a name="dashboard"></a></font>
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [License](LICENSE) para más detalles.
+
+
+# <font color='#307A71'>**Agradecimientos**<a name="dashboard"></a></font>
+
+Queremos expresar nuestro agradecimiento a todas las personas que directa o indirectamente han contribuido a este proyecto y a la comunidad de código abierto en general. ¡Gracias por su apoyo!
+
+----------
+
+© [Commerce Data Analysis And Recommendations](https://github.com/leydypenaloza/Commerce-Data-Analysis-and-Recommendations)
